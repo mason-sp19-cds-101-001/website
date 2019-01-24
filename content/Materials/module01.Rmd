@@ -9,6 +9,7 @@ Show_link: false
 
 ```{r setup, include = FALSE}
 icon_pdf <- '<i class="fas fa-file-pdf" data-fa-transform="grow-16"></i>&nbsp;'
+icon_pen <- '<i class="fa fa-pen-square" data-fa-transform="grow-16"></i>&nbsp;'
 icon_book <- '<i class="fa fa-book" data-fa-transform="grow-16"></i>&nbsp;'
 icon_github <- '<i class="fab fa-github-alt" data-fa-transform="grow-8"></i>&nbsp;'
 icon_pencil <- '<i class="fas fa-pencil-alt" data-fa-transform="grow-16"></i>&nbsp;'
@@ -20,7 +21,23 @@ icon_laptop <- '<i class="fa fa-laptop" data-fa-transform="grow-16"></i>&nbsp;'
 [Readings]{.h3}
 
 ::: {.no-bullets}
-*   [`r icon_book` &nbsp; [Reading 1]{.card-downloads-format}][reading-01] (Due: Jan-29 @ 1:30pm)
+*   [`r icon_book` &nbsp; [Reading 1]{.card-downloads-format}][reading01] (Complete by: Jan-28)
+:::
+
+<div style="margin-bottom: 1em"></div>
+
+[Module exercises]{.h3}
+
+::: {.no-bullets}
+*   [`r icon_laptop` &nbsp; [Module exercises 1]{.card-downloads-format}][module-exercises01] (Due: Jan-28 @ 11:59pm)
+:::
+
+<div style="margin-bottom: 1em"></div>
+
+[Homeworks]{.h3}
+
+::: {.no-bullets}
+*   [`r icon_pen` &nbsp; [Mini-homework 1]{.card-downloads-format}][mini-homework01] (Class activity: Jan-24)
 :::
 
 <div style="margin-bottom: 1em"></div>
@@ -65,8 +82,10 @@ vembedr::embed_youtube(id = "7mhehSq959k", height = 350, allowfullscreen = TRUE,
 *   [`r icon_pdf` &nbsp; [04 - Computation]{.card-downloads-format}][slides-04]
 :::
 
-[slides-01]:  /doc/what_are_comput_data_sci_01_science.pdf
-[slides-02]:  /doc/what_are_comput_data_sci_02_data_overview.pdf
-[slides-03]:  /doc/what_are_comput_data_sci_03_data_sampling.pdf
-[slides-04]:  /doc/what_are_comput_data_sci_04_computation.pdf
-[reading-01]: /assignments/reading-01/
+[slides-01]:          /doc/what_are_comput_data_sci_01_science.pdf
+[slides-02]:          /doc/what_are_comput_data_sci_02_data_overview.pdf
+[slides-03]:          /doc/what_are_comput_data_sci_03_data_sampling.pdf
+[slides-04]:          /doc/what_are_comput_data_sci_04_computation.pdf
+[reading01]:          /assignments/reading01/
+[mini-homework01]:    /assignments/minihw01-can-twitter-predict-election-results/
+[module-exercises01]: /assignments/module-exercises01/

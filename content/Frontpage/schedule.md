@@ -4,12 +4,12 @@ Date: 2019-01-22 13:30
 Index_save_as: index.html
 Url: /index.html
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Module           Dates                Topic                                                         Materials                          Assignments
----------------- -------------------- ------------------------------------------------------------- ---------                          ---------------------------------------
-Module 1         Jan-22<br>           What are the computational and data sciences?                 [<i                                [Reading 1]
-                 Jan-24                                                                             class="fas fa-chalkboard-teacher"
-                                                                                                    data-fa-transform="grow-8">
+---------------- ---------------      --------------------------------------------------            ---------                          ---------------------------------------------
+Module 1         Jan-22<br>           What are the computational and data sciences?                 [<i                                [Reading 1] (Complete by: Jan-28)<br>
+                 Jan-24                                                                             class="fas fa-chalkboard-teacher"  [Module exercises 1] (Due: Jan-28 @ 11:59pm)<br>
+                                                                                                    data-fa-transform="grow-8">        [Mini-homework 1] (Class activity: Jan-24)
                                                                                                     </i>][module01-materials]
 
 Module 2         Jan-29<br>           Course toolbox
@@ -47,7 +47,9 @@ Module 9         Apr-18<br>           Web scraping (special topic)
 Module 10        Apr-30<br>           Final project                                                                                    Final project report
                  May-02                                                                                                                (due: May-10 @ 11:59pm)
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[Reading 1]:          /assignments/reading-01/
+[Reading 1]:          /assignments/reading01/
+[Mini-homework 1]:    /assignments/minihw01-can-twitter-predict-election-results/
+[Module exercises 1]: /assignments/module-exercises01/
 [module01-materials]: /materials/module01-materials/
