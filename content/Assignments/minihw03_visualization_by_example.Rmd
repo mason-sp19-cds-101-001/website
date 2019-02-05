@@ -56,7 +56,7 @@ Start working on these exercises **after** you have successfully cloned your rep
     
     4.  Why does the [Species]{.monospace} column repeat the same words multiple times (put another way, what does each row represent)?
 
-@sepal-length-hist.  
+@sepal-length-hist.
     In your starter file [visualization_by_example.Rmd]{.monospace}, create an R code block by typing:
 
     <pre class="r"><code>&#96;&#96;&#96;{r}
@@ -101,7 +101,7 @@ Start working on these exercises **after** you have successfully cloned your rep
     You should end up with two plots.
     Compare the plots and explain what the [bins =]{.monospace} input controls.
 
-@.  Starting again with the code snippet in exercise, modify it to read as follows:
+@.  Starting again with the code snippet in exercise @sepal-length-hist, modify it to read as follows:
 
     ```r
     ggplot(data = iris) +
