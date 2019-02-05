@@ -45,7 +45,7 @@ ggplot(data=iris) +
 &amp;#96;&amp;#96;&amp;#96;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Let’s figure out what the &lt;span class="monospace"&gt;bins&lt;/span&gt; input is doing. Use the code snippet from exercise 2 as a starting point, and change the number to the right of bins to something &lt;em&gt;larger&lt;/em&gt; than 30, and then something &lt;em&gt;smaller&lt;/em&gt; than 30. You should end up with two plots. Compare the plots and explain what the &lt;span class="monospace"&gt;bins =&lt;/span&gt; input&amp;nbsp;controls.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Starting again with the code snippet in exercise, modify it to read as&amp;nbsp;follows:&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;Starting again with the code snippet in exercise 2, modify it to read as&amp;nbsp;follows:&lt;/p&gt;
 &lt;pre class="r"&gt;&lt;code&gt;ggplot(data = iris) +
   geom_histogram(
     mapping = aes(x = Sepal.Length, fill = Species),
