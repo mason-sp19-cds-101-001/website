@@ -29,7 +29,7 @@ icon_laptop <- '<i class="fa fa-laptop" data-fa-transform="grow-16"></i>&nbsp;'
 ::: {.no-bullets}
 *   [`r icon_pen` &nbsp; [Mini-homework 3 -- Visualization by example]{.card-downloads-format}][mini-homework03] (Due: Feb-12 @ 11:59pm)
 
-*   `r icon_pencil` &nbsp; [Homework 1 -- Rail trail (coming soon)]{.card-downloads-format}
+*   [`r icon_pencil` &nbsp; [Homework 1 -- Rail trail (coming soon)]{.card-downloads-format}][homework01] (Due: Feb-19 @ 11:59pm)
 :::
 
 <div style="margin-bottom: 1em"></div>
@@ -79,5 +79,5 @@ vembedr::embed_youtube(id = "pmjM0mz_1Es", height = 350, allowfullscreen = TRUE,
 [slides-03]:        /doc/data_visualization_03_describing_visualizations.pdf
 [slides-04]:        /doc/data_visualization_04_data_visualization_with_ggplot2.pdf
 [reading03]:        /assignments/reading03/
-[homework01]:       #
+[homework01]:       /assignments/homework-1/
 [mini-homework03]:  /assignments/minihw03-visualization-by-example/
