@@ -20,7 +20,7 @@ Module 2         Jan-29<br>           Course toolbox                            
 
 Module 3         Feb-05<br>           Data visualization                                            [<i                                [Reading 3] (Complete by: Feb-13)<br>
                  Feb-07<br>                                                                         class="fas fa-chalkboard-teacher"  [Mini-homework 3] (Due: Feb-12 @ 11:59pm)<br>
-                 Feb-12                                                                             data-fa-transform="grow-8">        Homework 1 (coming soon)
+                 Feb-12                                                                             data-fa-transform="grow-8">        [Homework 1] (Due: Feb-19 @ 11:59pm)
                                                                                                     </i>][module03-materials]
 
 Module 4         Feb-14<br>           Data transformation
@@ -56,7 +56,7 @@ Module 10        Apr-30<br>           Final project                             
 [Reading 1]:          /assignments/reading01/
 [Reading 2]:          /assignments/reading02/
 [Reading 3]:          /assignments/reading03/
-[Homework 1]:         #
+[Homework 1]:         /assignments/homework-1/
 [Mini-homework 1]:    /assignments/minihw01-can-twitter-predict-election-results/
 [Mini-homework 2a]:   /assignments/minihw02a-rmarkdown-practice/
 [Mini-homework 2b]:   /assignments/minihw02b-visualization-practice/
