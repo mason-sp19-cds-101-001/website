@@ -27,7 +27,7 @@ icon_laptop <- '<i class="fa fa-laptop" data-fa-transform="grow-16"></i>&nbsp;'
 [Module exercises]{.h2}
 
 ::: {.no-bullets}
-*   [`r icon_laptop` &nbsp; [Module exercises 1]{.card-downloads-format}][module-exercises01] (Due: Jan-28 @ 11:59pm)
+*   [`r icon_laptop` &nbsp; [Module 1 exercises]{.card-downloads-format}][module-exercises] (Due: Jan-28 @ 11:59pm)
 :::
 
 <div style="margin-bottom: 1em"></div>
@@ -80,10 +80,10 @@ vembedr::embed_youtube(id = "7mhehSq959k", height = 350, allowfullscreen = TRUE,
 *   [`r icon_pdf` &nbsp; [04 - Computation]{.card-downloads-format}][slides-04]
 :::
 
-[slides-01]:          /doc/what_are_comput_data_sci_01_science.pdf
-[slides-02]:          /doc/what_are_comput_data_sci_02_data_overview.pdf
-[slides-03]:          /doc/what_are_comput_data_sci_03_data_sampling.pdf
-[slides-04]:          /doc/what_are_comput_data_sci_04_computation.pdf
-[reading01]:          /assignments/reading01/
-[mini-homework01]:    /assignments/minihw01-can-twitter-predict-election-results/
-[module-exercises01]: /assignments/module-exercises01/
+[slides-01]:        /doc/what_are_comput_data_sci_01_science.pdf
+[slides-02]:        /doc/what_are_comput_data_sci_02_data_overview.pdf
+[slides-03]:        /doc/what_are_comput_data_sci_03_data_sampling.pdf
+[slides-04]:        /doc/what_are_comput_data_sci_04_computation.pdf
+[reading01]:        /assignments/reading01/
+[mini-homework01]:  /assignments/minihw01-can-twitter-predict-election-results/
+[module-exercises]: /assignments/module01-exercises/
