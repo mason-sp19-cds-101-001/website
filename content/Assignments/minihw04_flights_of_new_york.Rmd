@@ -1,6 +1,6 @@
 Title: Flights of New York
 Author: Dr. Glasbrenner
-Date: 2019-02-21 23:59
+Date: 2019-02-22 23:59
 Tags: mini-assignment
 Slug: minihw04-flights-of-new-york
 Summary: A mini-homework for practicing how to manipulate datasets using the dplyr library.
@@ -12,7 +12,7 @@ icon_github <- '<i class="fab fa-github-alt" data-fa-transform="grow-8"></i>&nbs
 assignment_name <- "Mini-homework 4"
 ```
 
-[**Due:** February 21, 2019 @ 11:59pm]{.h3}
+[**Due:** February 22, 2019 @ 11:59pm]{.h3}
 
 ::: {.no-bullets}
 *   [`r icon_github` GitHub Classroom repo for **Mini-homework 4 -- Flights of New York**][github-classroom]
@@ -254,7 +254,7 @@ You are encouraged to review and keep the following cheatsheets handy while work
 
 The example in Exercise @mutate-dataset and the example and question of Exercise @mutate-times sourced from [Chapter 5 of *R for Data Science* by Garrett Grolemund and Hadley Wickham](https://r4ds.had.co.nz/transform.html), used under [CC BY-NC-ND 3.0](https://creativecommons.org/licenses/by-nc-nd/3.0/us/).
 
-[github-classroom]:     #
+[github-classroom]:     https://classroom.github.com/a/nQ0NfW9J
 [dplyr-cheatsheet]:     /doc/data-transformation-cheatsheet.pdf
 [ggplot2-cheatsheet]:   /doc/data-visualization-cheatsheet.pdf
 [rstudio-cheatsheet]:   /doc/rstudio-ide-cheatsheet.pdf
