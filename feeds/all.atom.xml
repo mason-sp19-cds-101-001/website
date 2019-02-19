@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>CDS 101 - 001: Introduction to Computational and Data Sciences</title><link href="http://sp19-001.cds101.com/" rel="alternate"></link><link href="http://sp19-001.cds101.com/feeds/all.atom.xml" rel="self"></link><id>http://sp19-001.cds101.com/</id><updated>2019-02-21T23:59:00-05:00</updated><entry><title>Flights of New York</title><link href="http://sp19-001.cds101.com/assignments/minihw04-flights-of-new-york/" rel="alternate"></link><published>2019-02-21T23:59:00-05:00</published><updated>2019-02-21T23:59:00-05:00</updated><author><name>Dr. Glasbrenner</name></author><id>tag:sp19-001.cds101.com,2019-02-21:/assignments/minihw04-flights-of-new-york/</id><summary type="html">A mini-homework for practicing how to manipulate datasets using the dplyr&amp;nbsp;library.</summary><content type="html">&lt;p&gt;&lt;span class="h3"&gt;&lt;strong&gt;Due:&lt;/strong&gt; February 21, 2019 @&amp;nbsp;11:59pm&lt;/span&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CDS 101 - 001: Introduction to Computational and Data Sciences</title><link href="http://sp19-001.cds101.com/" rel="alternate"></link><link href="http://sp19-001.cds101.com/feeds/all.atom.xml" rel="self"></link><id>http://sp19-001.cds101.com/</id><updated>2019-02-22T23:59:00-05:00</updated><entry><title>Flights of New York</title><link href="http://sp19-001.cds101.com/assignments/minihw04-flights-of-new-york/" rel="alternate"></link><published>2019-02-22T23:59:00-05:00</published><updated>2019-02-22T23:59:00-05:00</updated><author><name>Dr. Glasbrenner</name></author><id>tag:sp19-001.cds101.com,2019-02-22:/assignments/minihw04-flights-of-new-york/</id><summary type="html">A mini-homework for practicing how to manipulate datasets using the dplyr&amp;nbsp;library.</summary><content type="html">&lt;p&gt;&lt;span class="h3"&gt;&lt;strong&gt;Due:&lt;/strong&gt; February 22, 2019 @&amp;nbsp;11:59pm&lt;/span&gt;&lt;/p&gt;
 &lt;div class="no-bullets"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fab fa-github-alt" data-fa-transform="grow-8"&gt;&lt;/i&gt;  GitHub Classroom repo for &lt;strong&gt;Mini-homework 4 – Flights of New&amp;nbsp;York&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://classroom.github.com/a/nQ0NfW9J"&gt;&lt;i class="fab fa-github-alt" data-fa-transform="grow-8"&gt;&lt;/i&gt;  GitHub Classroom repo for &lt;strong&gt;Mini-homework 4 – Flights of New&amp;nbsp;York&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;h2 id="instructions"&gt;Instructions&lt;/h2&gt;
-&lt;p&gt;&lt;a href="#"&gt;Obtain the GitHub repository you will use to complete the mini-homework&lt;/a&gt;, which contains a starter file named &lt;span class="monospace"&gt;flights_of_new_york.Rmd&lt;/span&gt;. This mini-homework will help you become more familiar with manipulating datasets using R by guiding you through some examples. Read the &lt;a href="#about-the-dataset"&gt;About the dataset&lt;/a&gt; section to get some background information on the dataset that you’ll be working with. Each of the below &lt;a href="#exercises"&gt;exercises&lt;/a&gt; are to be completed in the provided spaces within your starter file &lt;span class="monospace"&gt;flights_of_new_york.Rmd&lt;/span&gt;. Then, when you’re ready to submit, follow the directions in the &lt;strong&gt;&lt;a href="#how-to-submit"&gt;How to submit&lt;/a&gt;&lt;/strong&gt; section&amp;nbsp;below.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://classroom.github.com/a/nQ0NfW9J"&gt;Obtain the GitHub repository you will use to complete the mini-homework&lt;/a&gt;, which contains a starter file named &lt;span class="monospace"&gt;flights_of_new_york.Rmd&lt;/span&gt;. This mini-homework will help you become more familiar with manipulating datasets using R by guiding you through some examples. Read the &lt;a href="#about-the-dataset"&gt;About the dataset&lt;/a&gt; section to get some background information on the dataset that you’ll be working with. Each of the below &lt;a href="#exercises"&gt;exercises&lt;/a&gt; are to be completed in the provided spaces within your starter file &lt;span class="monospace"&gt;flights_of_new_york.Rmd&lt;/span&gt;. Then, when you’re ready to submit, follow the directions in the &lt;strong&gt;&lt;a href="#how-to-submit"&gt;How to submit&lt;/a&gt;&lt;/strong&gt; section&amp;nbsp;below.&lt;/p&gt;
 &lt;h2 id="about-the-dataset"&gt;About the&amp;nbsp;dataset&lt;/h2&gt;
 &lt;p&gt;The dataset we are working with in this mini-homework is the &lt;span class="monospace"&gt;flights&lt;/span&gt; dataset that is loaded via the &lt;span class="monospace"&gt;nycflights13&lt;/span&gt; R package. This dataset contains on-time data for all flights that departed from a New York City airport (airport codes: &lt;span class="caps"&gt;JFK&lt;/span&gt;, &lt;span class="caps"&gt;LGA&lt;/span&gt;, &lt;span class="caps"&gt;EWR&lt;/span&gt;) in&amp;nbsp;2013.&lt;/p&gt;
 &lt;h2 id="exercises"&gt;Exercises&lt;/h2&gt;
@@ -350,7 +350,7 @@
 &lt;p&gt;&lt;span class="h2"&gt;Homeworks&lt;/span&gt;&lt;/p&gt;
 &lt;div class="no-bullets"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;span class="card-downloads-format"&gt;&lt;i class="fa fa-pen-square" data-fa-transform="grow-16"&gt;&lt;/i&gt;    Mini-homework 4 – Flights of New York (coming&amp;nbsp;soon)&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="/assignments/minihw04-flights-of-new-york/"&gt;&lt;i class="fa fa-pen-square" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Mini-homework 4 – Flights of New York&lt;/span&gt;&lt;/a&gt; (Due: Feb-22 @&amp;nbsp;11:59pm)&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;i class="fas fa-pencil-alt" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Homework 2 – Titanic (coming&amp;nbsp;soon)&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -364,12 +364,7 @@
 &lt;iframe src="https://www.youtube.com/embed/j8tKN7Iw5dw" width="420" height="350" frameborder="0" allowfullscreen&gt;
 &lt;/iframe&gt;
 &lt;!--/html_preserve--&gt;
-&lt;p&gt;&lt;strong&gt;Data transformation - 02 - The presidential&amp;nbsp;dataset&lt;/strong&gt;&lt;/p&gt;
-&lt;!--html_preserve--&gt;
-&lt;iframe src="https://www.youtube.com/embed/wP6xGaTdfVc" width="420" height="350" frameborder="0" allowfullscreen&gt;
-&lt;/iframe&gt;
-&lt;!--/html_preserve--&gt;
-&lt;p&gt;&lt;strong&gt;Data transformation …&lt;/strong&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;span class="h2"&gt;Readings&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Data transformation - 02 - The presidential&amp;nbsp;dataset …&lt;/strong&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;span class="h2"&gt;Readings&lt;/span&gt;&lt;/p&gt;
 &lt;div class="no-bullets"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="/assignments/reading04/"&gt;&lt;i class="fa fa-book" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Reading 4&lt;/span&gt;&lt;/a&gt; (Complete by: Feb-20 @&amp;nbsp;1:30pm)&lt;/li&gt;
@@ -390,7 +385,7 @@
 &lt;p&gt;&lt;span class="h2"&gt;Homeworks&lt;/span&gt;&lt;/p&gt;
 &lt;div class="no-bullets"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;span class="card-downloads-format"&gt;&lt;i class="fa fa-pen-square" data-fa-transform="grow-16"&gt;&lt;/i&gt;    Mini-homework 4 – Flights of New York (coming&amp;nbsp;soon)&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="/assignments/minihw04-flights-of-new-york/"&gt;&lt;i class="fa fa-pen-square" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Mini-homework 4 – Flights of New York&lt;/span&gt;&lt;/a&gt; (Due: Feb-22 @&amp;nbsp;11:59pm)&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;i class="fas fa-pencil-alt" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Homework 2 – Titanic (coming&amp;nbsp;soon)&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -1319,7 +1314,7 @@ data-fa-transform="grow-8"&gt; &lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href="/materials/module04-materials/"&gt;&lt;i
 class="fas fa-chalkboard-teacher"
 data-fa-transform="grow-8"&gt; &lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td style="text-align: left;"&gt;&lt;a href="/assignments/reading04/"&gt;Reading 4&lt;/a&gt; (Complete by: Feb-20)&lt;br&gt; &lt;a href="/assignments/module04-exercises/"&gt;Module 4 exercises&lt;/a&gt; (Due: Feb-20 @ 11:59pm)&lt;br&gt; Mini-homework 4 (Coming soon)&lt;br&gt; Homework 2 (Coming soon)&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;&lt;a href="/assignments/reading04/"&gt;Reading 4&lt;/a&gt; (Complete by: Feb-20)&lt;br&gt; &lt;a href="/assignments/module04-exercises/"&gt;Module 4 exercises&lt;/a&gt; (Due: Feb-20 @ 11:59pm)&lt;br&gt; &lt;a href="/assignments/minihw04-flights-of-new-york/"&gt;Mini-homework 4&lt;/a&gt; (Due: Feb-22 @ 11:59pm)&lt;br&gt; Homework 2 (Coming soon)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class="odd"&gt;
 &lt;td style="text-align: left;"&gt;Module 5&lt;/td&gt;
