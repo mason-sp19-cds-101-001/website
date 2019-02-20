@@ -106,7 +106,7 @@
 <p><span class="h4">Important!</span></p>
 <p>Confusion about the function to use for sorting data frames frequently comes up later in the course. Students often find that there is a function named <code>sort()</code> in R as well. However, it will give you errors if you try to use it the same way we use <code>arrange()</code>. For the purposes of this course, <strong>always use <code>arrange()</code> and pretend <code>sort()</code> doesn’t exist</strong>.</p>
 </div></li>
-<li><p>By default, <code>arrange()</code> will sort data in ascending order. The function <code>desc()</code> can be used to sort in descending order. For example, to sort by months in reverse order, we would use <code>arrange(desc(month))</code> Let’s use it to answer a simple question about the dataset: what flight experienced the longest delay? Identify the column that gives information about flight delays, and then use <code>arrange()</code> in combination with <code>desc()</code> to sort the <span class="monospace">flights</span> dataset to find the most delayed&nbsp;flight.</p></li>
+<li><p>By default, <code>arrange()</code> will sort data in ascending order. The function <code>desc()</code> can be used to sort in descending order. For example, to sort by months in reverse order, we would use <code>arrange(desc(month))</code> Let’s use it to answer a simple question about the dataset: what flight experienced the longest departure delay? Identify the column that gives information about flight departure delays, and then use <code>arrange()</code> in combination with <code>desc()</code> to sort the <span class="monospace">flights</span> dataset to find the flight with the longest departure&nbsp;delay.</p></li>
 <li><p>Let’s now try an example that uses the <code>mutate()</code> function, which is a little more complex. <code>mutate()</code> lets us <strong>transform</strong> a dataset by applying the same operation to each row in the dataset and appending the results as a <em>new</em> column. More simply, this is how you can add, subtract, multiply, and divide different two or more columns against each other. As an example, run the following command to calculate the average speed for each flight in miles per&nbsp;hour:</p>
 <pre class="r"><code>flights %&gt;%
   mutate(
@@ -154,7 +154,7 @@
 <pre class="r"><code>flights %&gt;%
   group_by(carrier) %&gt;%
   summarize(
-    average_arr_delay = mean(arr_delay)
+    average_arr_delay = mean(arr_delay, na.rm = TRUE)
   )</code></pre>
 <p>Which airline carrier had the longest arrival delays on average? Which airline carrier had the shortest arrival delays on&nbsp;average?</p></li>
 </ol>

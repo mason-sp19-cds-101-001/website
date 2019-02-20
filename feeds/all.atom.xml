@@ -42,7 +42,7 @@
 &lt;p&gt;&lt;span class="h4"&gt;Important!&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Confusion about the function to use for sorting data frames frequently comes up later in the course. Students often find that there is a function named &lt;code&gt;sort()&lt;/code&gt; in R as well. However, it will give you errors if you try to use it the same way we use &lt;code&gt;arrange()&lt;/code&gt;. For the purposes of this course, &lt;strong&gt;always use &lt;code&gt;arrange()&lt;/code&gt; and pretend &lt;code&gt;sort()&lt;/code&gt; doesn’t exist&lt;/strong&gt;.&lt;/p&gt;
 &lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;By default, &lt;code&gt;arrange()&lt;/code&gt; will sort data in ascending order. The function &lt;code&gt;desc()&lt;/code&gt; can be used to sort in descending order. For example, to sort by months in reverse order, we would use &lt;code&gt;arrange(desc(month))&lt;/code&gt; Let’s use it to answer a simple question about the dataset: what flight experienced the longest delay? Identify the column that gives information about flight delays, and then use &lt;code&gt;arrange()&lt;/code&gt; in combination with &lt;code&gt;desc()&lt;/code&gt; to sort the &lt;span class="monospace"&gt;flights&lt;/span&gt; dataset to find the most delayed&amp;nbsp;flight.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;By default, &lt;code&gt;arrange()&lt;/code&gt; will sort data in ascending order. The function &lt;code&gt;desc()&lt;/code&gt; can be used to sort in descending order. For example, to sort by months in reverse order, we would use &lt;code&gt;arrange(desc(month))&lt;/code&gt; Let’s use it to answer a simple question about the dataset: what flight experienced the longest departure delay? Identify the column that gives information about flight departure delays, and then use &lt;code&gt;arrange()&lt;/code&gt; in combination with &lt;code&gt;desc()&lt;/code&gt; to sort the &lt;span class="monospace"&gt;flights&lt;/span&gt; dataset to find the flight with the longest departure&amp;nbsp;delay.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Let’s now try an example that uses the &lt;code&gt;mutate()&lt;/code&gt; function, which is a little more complex. &lt;code&gt;mutate()&lt;/code&gt; lets us &lt;strong&gt;transform&lt;/strong&gt; a dataset by applying the same operation to each row in the dataset and appending the results as a &lt;em&gt;new&lt;/em&gt; column. More simply, this is how you can add, subtract, multiply, and divide different two or more columns against each other. As an example, run the following command to calculate the average speed for each flight in miles per&amp;nbsp;hour:&lt;/p&gt;
 &lt;pre class="r"&gt;&lt;code&gt;flights %&amp;gt;%
   mutate(
@@ -90,7 +90,7 @@
 &lt;pre class="r"&gt;&lt;code&gt;flights %&amp;gt;%
   group_by(carrier) %&amp;gt;%
   summarize(
-    average_arr_delay = mean(arr_delay)
+    average_arr_delay = mean(arr_delay, na.rm = TRUE)
   )&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Which airline carrier had the longest arrival delays on average? Which airline carrier had the shortest arrival delays on&amp;nbsp;average?&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
