@@ -37,7 +37,7 @@ icon_laptop <- '<i class="fa fa-laptop" data-fa-transform="grow-16"></i>&nbsp;'
 ::: {.no-bullets}
 *   [`r icon_pen` &nbsp; [Mini-homework 4 -- Flights of New York]{.card-downloads-format}][mini-homework04] (Due: Feb-22 @ 11:59pm)
 
-*   `r icon_pencil` &nbsp; [Homework 2 -- Titanic (coming soon)]{.card-downloads-format}
+*   [`r icon_pencil` &nbsp; [Homework 2 -- Titanic]{.card-downloads-format}][homework02] (Due: Mar-05 @ 11:59pm)
 :::
 
 <div style="margin-bottom: 1em"></div>

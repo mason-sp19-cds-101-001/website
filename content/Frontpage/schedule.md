@@ -26,7 +26,7 @@ Module 3         Feb-05<br>           Data visualization                        
 Module 4         Feb-14<br>           Data transformation                                           [<i                                [Reading 4] (Complete by: Feb-20)<br>
                  Feb-19<br>                                                                         class="fas fa-chalkboard-teacher"  [Module 4 exercises] (Due: Feb-20 @ 11:59pm)<br>
                  Feb-21<br>                                                                         data-fa-transform="grow-8">        [Mini-homework 4] (Due: Feb-22 @ 11:59pm)<br>
-                 Feb-26                                                                             </i>][module04-materials]          Homework 2 (Coming soon)
+                 Feb-26                                                                             </i>][module04-materials]          [Homework 2] (Due: Mar-05 @ 11:59pm)
 
 Module 5         Feb-28<br>           Data reshaping (Tidy data)
                  Mar-05
