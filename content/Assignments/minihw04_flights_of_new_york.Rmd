@@ -38,28 +38,28 @@ Start working on these exercises **after** you have successfully cloned your rep
 @view-table.
     As always, you should inspect a new dataset to become more familiar with what it contains.
     To do this in RStudio, type the following command **in your *Console* window** (not in the R Markdown file):
-    
+
     ```r
     View(flights)
     ```
-    
+
     Since the [flights]{.monospace} dataset is loaded as an R package via the `library(nycflights13)` in your setup code block, additional documentation is available.
     To read more about the dataset, type the following command **in your *Console* window**:
-    
+
     ```r
     ?flights
     ```
-    
+
     Use these resources to answer these initial questions.
-    
+
     1.  How many rows and columns does this dataset have?
-    
+
     2.  What does a single row in this dataset represent?
-    
+
     3.  What is the difference between the information contained in the [dep\_time]{.monospace} and [sched\_dep\_time]{.monospace} columns?
-    
+
     4.  Which columns contain information about dates and times?
-    
+
     5.  Airplanes are reused across many different flights.
         Which columns would be helpful to use in identifying individual airplanes?
 
@@ -77,7 +77,7 @@ Start working on these exercises **after** you have successfully cloned your rep
 
     ::: {.callout .primary}
     [What does [%>%]{.monospace} mean?]{.h4}
-    
+
     The strange looking symbol [%>%]{.monospace} is called the **pipe**, and it is a handy way to pass a dataset through a chain of commands.
     :::
 
@@ -86,7 +86,7 @@ Start working on these exercises **after** you have successfully cloned your rep
     To demonstrate this, copy the code you wrote in **Exercise @select-column** and replace `select(year, month)` with `select(year:day)`.
     What does the colon [:]{.monospace} do?
 
-@sorting-data.  
+@sorting-data.
     The sort operation is a common and indispensible operation for organizing data, and the function from [dplyr]{.monospace} that allows us to sort is called `arrange()`.
     `arrange()` sorts columns with textual data ([chr]{.monospace} data type) into alphabetical order and sorts numerical data into numerical order.
 
@@ -100,29 +100,29 @@ Start working on these exercises **after** you have successfully cloned your rep
     Based on the output, does it look like both the [month]{.monospace} and [day]{.monospace} columns were sorted?
     Which column was sorted first?
     What happens if you reverse the order you specify the columns in `arrange()`?
-    
+
     ::: {.callout .secondary}
     [Important!]{.h4}
-    
+
     Confusion about the function to use for sorting data frames frequently comes up later in the course.
     Students often find that there is a function named `sort()` in R as well.
     However, it will give you errors if you try to use it the same way we use `arrange()`.
     For the purposes of this course, **always use `arrange()` and pretend `sort()` doesn't exist**.
     :::
-    
-@descending-sort.  
+
+@descending-sort.
     By default, `arrange()` will sort data in ascending order.
     The function `desc()` can be used to sort in descending order.
     For example, to sort by months in reverse order, we would use `arrange(desc(month))`
-    Let's use it to answer a simple question about the dataset: what flight experienced the longest delay?
-    Identify the column that gives information about flight delays, and then use `arrange()` in combination with `desc()` to sort the [flights]{.monospace} dataset to find the most delayed flight.
+    Let's use it to answer a simple question about the dataset: what flight experienced the longest departure delay?
+    Identify the column that gives information about flight departure delays, and then use `arrange()` in combination with `desc()` to sort the [flights]{.monospace} dataset to find the flight with the longest departure delay.
 
-@mutate-dataset.  
+@mutate-dataset.
     Let's now try an example that uses the `mutate()` function, which is a little more complex.
     `mutate()` lets us **transform** a dataset by applying the same operation to each row in the dataset and appending the results as a *new* column.
     More simply, this is how you can add, subtract, multiply, and divide different two or more columns against each other.
     As an example, run the following command to calculate the average speed for each flight in miles per hour:
-    
+
     ```r
     flights %>%
       mutate(
@@ -149,23 +149,23 @@ Start working on these exercises **after** you have successfully cloned your rep
     Next, copy and paste this code into a new code block, add a second comma, and then add a third line.
     **Have this third line use the `dep_time_hour` and `dep_time_minute` columns to compute the number of minutes since midnight.**
     Name this third column `dep_time_minutes_midnight`.
-    
+
     ::: {.callout .primary}
     [What do [%/%]{.monospace} and [%%]{.monospace} mean?]{.h4}
-    
+
     The operators [%/%]{.monospace} and [%%]{.monospace} let you do **modular arithmetic.**
     The symbol [%/%]{.monospace} means *integer division* and [%%]{.monospace} means *remainder*.
     As a quick example, you might remember learning about proper and improper fractions in math class.
     $\dfrac{9}{4}$ is an example of an improper fraction.
     To convert it into a proper fraction, first we need to figure out how many times 4 goes into 9.
     We can easily compute this with integer division:
-    
+
     ```{r integer-division-example, comment = "#"}
     9 %/% 4
     ```
-    
+
     We also need to know the remainder, or how much is left over after dividing 4 into 9.
-    
+
     ```{r remainder-example, comment = "#"}
     9 %% 4
     ```
@@ -176,14 +176,14 @@ Start working on these exercises **after** you have successfully cloned your rep
 @filtering-data.
     Next we consider the `filter()` function, which provides a ruled-based way to keep a subset of rows and remove the rest.
     Here we just consider rules that are simple comparisons, which involve the symbols:
-    
+
     *   [>]{.monospace}: greater than
     *   [>=]{.monospace}: greater than or equal to
     *   [<]{.monospace}: less than
     *   [<=]{.monospace}: less than or equal to
     *   [!=]{.monospace}: not equal
     *   [==]{.monospace}: equal
-    
+
     Give `filter()` a try by running the following two code blocks:
 
     ```r
@@ -192,7 +192,7 @@ Start working on these exercises **after** you have successfully cloned your rep
         arr_delay < 0
       )
     ```
-    
+
     ```r
     flights %>%
       filter(
@@ -205,9 +205,9 @@ Start working on these exercises **after** you have successfully cloned your rep
 
 @data-aggregation.
     It is common to want to summarize the information contained within a dataset, such as computing sums and averages, or counting how many data points belong to different groups.
-    This is called data aggregation, as it **aggregates** many data points together and uses them to compute a cetain quantity. 
+    This is called data aggregation, as it **aggregates** many data points together and uses them to compute a cetain quantity.
     We perform data aggregation in R by using the commands `group_by()` and `summarize()`, which frequently show up as a pair.
-    
+
     The `group_by()` command is applied to one or more columns, and allows you create groups that share common values in a column of categorical data.
     The `summarize()` command can then be used to compute quantities like averages **within** those groups.
     It will help to see an example.
@@ -217,7 +217,7 @@ Start working on these exercises **after** you have successfully cloned your rep
     flights %>%
       group_by(carrier) %>%
       summarize(
-        average_arr_delay = mean(arr_delay)
+        average_arr_delay = mean(arr_delay, na.rm = TRUE)
       )
     ```
 
