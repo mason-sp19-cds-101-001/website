@@ -4,7 +4,6 @@ Author_Image: https://www.gravatar.com/avatar/49802fdfa5a0e63b3d932a5179d41c1e
 Date: 2019-03-05 23:59
 Tags: homework
 Slug: homework-2
-Status: Draft
 Summary: For your second major assignment, you will explore a dataset about the passengers on the <em>Titanic</em>, the British passenger liner that crashed into an iceberg during its maiden voyage and sank early in the morning on April 16, 1912.
 Show_summary: true
 Show_link: true
