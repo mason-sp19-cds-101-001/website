@@ -233,15 +233,15 @@ Afterwards, we will analyze the dataset.
     ```
 
     Confirm that the first six rows are the following:
-
+    
     | First Name  | Last Name  |  Final Grade |
     | :---------- | :--------- | -----------: |
-    | Anthony     | Capote     |           87 |
-    | Bryant      | Criddle    |           91 |
-    | Cherie      | Maiden     |           71 |
-    | Christiana  | Deblois    |           83 |
-    | Cleveland   | Fromm      |           83 |
-    | Cliff       | Vankeuren  |           80 |
+    | Anthony     | Capote     |     87.22143 |
+    | Bryant      | Criddle    |     90.60000 |
+    | Cherie      | Maiden     |     71.17143 |
+    | Christiana  | Deblois    |     83.22857 |
+    | Cleveland   | Fromm      |     83.49286 |
+    | Cliff       | Vankeuren  |     79.81429 |
 
 @final-grades-visualization.
     Now that we have the final grades, let's use a point plot similar to what is shown in Chapter 15.4 of the textbook, http://r4ds.had.co.nz/factors.html#modifying-factor-order, and review how the students did:
