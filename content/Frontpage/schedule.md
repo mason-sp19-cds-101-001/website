@@ -1,7 +1,7 @@
 Title: Spring 2019 Schedule
 Author: Dr. Glasbrenner
 Date: 2019-01-22 13:30
-Modified: 2019-02-14 08:00
+Modified: 2019-03-18 08:00
 Index_save_as: index.html
 Url: /index.html
 
@@ -28,28 +28,29 @@ Module 4         Feb-14<br>           Data transformation                       
                  Feb-21<br>                                                                         data-fa-transform="grow-8">        [Mini-homework 4] (Due: Feb-22 @ 11:59pm)<br>
                  Feb-26                                                                             </i>][module04-materials]          [Homework 2] (Due: Mar-05 @ 11:59pm)
 
-Module 5         Feb-28<br>           Data reshaping (Tidy data)
-                 Mar-05
+                 Mar-05               **Class canceled**
 
                  Mar-07                                                                                                                Midterm Exam
 
-Module 6         Mar-19<br>           Data distributions
-                 Mar-21
+Module 5         Feb-28<br>           Data reshaping (Tidy data)                                    [<i                                [Reading 5] (Complete by: Mar-25)<br>
+                 Mar-19<br>                                                                         class="fas fa-chalkboard-teacher"  [Module 5 exercises] (Due: Mar-25 @ 11:59pm)<br>
+                 Mar-21                                                                             data-fa-transform="grow-8">        [Mini-homework 5] (Due: Mar-27 @ 11:59pm)
+                                                                                                    </i>][module05-materials]
+                 
+Module 6         Mar-26<br>           Data distributions
+                 Mar-28
 
-Module 7         Mar-26<br>           Inference and simulation
-                 Mar-28<br>
-                 Apr-02<br>
-                 Apr-04
+Module 7         Apr-02<br>           Inference and simulation
+                 Apr-04<br>
+                 Apr-09<br>
+                 Apr-11
 
-Module 8         Apr-09<br>           Modeling
-                 Apr-11<br>
-                 Apr-16<br>
-                 Apr-18
-
-Module 9         Apr-23<br>           Web scraping (special topic)
+Module 8         Apr-16<br>           Modeling
+                 Apr-18<br>
+                 Apr-23<br>
                  Apr-25
 
-Module 10        Apr-30<br>           Final project                                                                                    Final project report
+                 Apr-30<br>           Final project                                                                                    Final project report
                  May-02                                                                                                                (due: May-10 @ 11:59pm)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -58,6 +59,7 @@ Module 10        Apr-30<br>           Final project                             
 [Reading 2]:          /assignments/reading02/
 [Reading 3]:          /assignments/reading03/
 [Reading 4]:          /assignments/reading04/
+[Reading 5]:          /assignments/reading05/
 [Homework 1]:         /assignments/homework-1/
 [Homework 2]:         /assignments/homework-2/
 [Mini-homework 1]:    /assignments/minihw01-can-twitter-predict-election-results/
@@ -65,9 +67,12 @@ Module 10        Apr-30<br>           Final project                             
 [Mini-homework 2b]:   /assignments/minihw02b-visualization-practice/
 [Mini-homework 3]:    /assignments/minihw03-visualization-by-example/
 [Mini-homework 4]:    /assignments/minihw04-flights-of-new-york/
+[Mini-homework 5]:    /assignments/minihw05-tidy-gradebook/
 [Module 1 exercises]: /assignments/module01-exercises/
 [Module 4 exercises]: /assignments/module04-exercises/
+[Module 5 exercises]: /assignments/module05-exercises/
 [module01-materials]: /materials/module01-materials/
 [module02-materials]: /materials/module02-materials/
 [module03-materials]: /materials/module03-materials/
 [module04-materials]: /materials/module04-materials/
+[module05-materials]: /materials/module05-materials/
