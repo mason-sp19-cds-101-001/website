@@ -200,7 +200,13 @@
 &lt;li&gt;&lt;p&gt;&lt;a href="/doc/rmarkdown-cheatsheet.pdf"&gt;R Markdown&amp;nbsp;cheatsheet&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href="/doc/rmarkdown-reference.pdf"&gt;R Markdown&amp;nbsp;reference&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content><category term="mini-assignment"></category></entry><entry><title>Reading 5</title><link href="http://sp19-001.cds101.com/assignments/reading05/" rel="alternate"></link><published>2019-03-25T11:59:00-04:00</published><updated>2019-03-25T11:59:00-04:00</updated><author><name>Dr. Glasbrenner</name></author><id>tag:sp19-001.cds101.com,2019-03-25:/assignments/reading05/</id><summary type="html">&lt;p&gt;&lt;i class="fa fa-book" data-fa-transform="grow-4"&gt;&lt;/i&gt;  &lt;span class="h3"&gt;R for Data&amp;nbsp;Science&lt;/span&gt;&lt;/p&gt;
+</content><category term="mini-assignment"></category></entry><entry><title>Module 5 exercises</title><link href="http://sp19-001.cds101.com/assignments/module05-exercises/" rel="alternate"></link><published>2019-03-25T23:59:00-04:00</published><updated>2019-03-25T23:59:00-04:00</updated><author><name>Dr. Glasbrenner</name></author><id>tag:sp19-001.cds101.com,2019-03-25:/assignments/module05-exercises/</id><summary type="html">For this module exercise, you will answer a series of questions that check your understanding of the material covered in the Module 5&amp;nbsp;lectures.</summary><content type="html">&lt;p&gt;&lt;span class="h3"&gt;&lt;strong&gt;Due:&lt;/strong&gt; March 25, 2019 @&amp;nbsp;11:59pm&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id="instructions"&gt;Instructions&lt;/h2&gt;
+&lt;p&gt;This module exercise is a series of questions &lt;strong&gt;posted on Blackboard&lt;/strong&gt; that check your understanding of the &lt;a href="/materials/module05-materials/"&gt;module 5 lecture material&lt;/a&gt; (the in-class lecture on February 28). You can go directly to the module exercise on Blackboard by &lt;a href="https://mymasonportal.gmu.edu/webapps/blackboard/content/listContent.jsp?course_id=_359486_1&amp;amp;content_id=_8969474_1"&gt;clicking here&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="callout primary"&gt;
+&lt;p&gt;There is no time limit and you may attempt the module exercises up to three times. Your grade will be the highest score you receive across your&amp;nbsp;attempts.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="module-exercise"></category></entry><entry><title>Reading 5</title><link href="http://sp19-001.cds101.com/assignments/reading05/" rel="alternate"></link><published>2019-03-25T11:59:00-04:00</published><updated>2019-03-25T11:59:00-04:00</updated><author><name>Dr. Glasbrenner</name></author><id>tag:sp19-001.cds101.com,2019-03-25:/assignments/reading05/</id><summary type="html">&lt;p&gt;&lt;i class="fa fa-book" data-fa-transform="grow-4"&gt;&lt;/i&gt;  &lt;span class="h3"&gt;R for Data&amp;nbsp;Science&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;i class="fa fa-link"&gt;&lt;/i&gt;  Book &lt;span class="caps"&gt;URL&lt;/span&gt;: &lt;a href="http://r4ds.had.co.nz" class="uri"&gt;http://r4ds.had.co.nz&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Chapter 12: Tidy&amp;nbsp;data&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -488,6 +494,15 @@ A photograph of the &lt;em&gt;Titanic&lt;/em&gt; leaving Southampton on April 10
 &lt;div style="margin-bottom: 1em"&gt;
 
 &lt;/div&gt;
+&lt;p&gt;&lt;span class="h2"&gt;Module&amp;nbsp;exercises&lt;/span&gt;&lt;/p&gt;
+&lt;div class="no-bullets"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/assignments/module05-exercises/"&gt;&lt;i class="fa fa-laptop" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Module 5 exercises&lt;/span&gt;&lt;/a&gt; (Due: Mar-25 @&amp;nbsp;11:59pm)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div style="margin-bottom: 1em"&gt;
+
+&lt;/div&gt;
 &lt;p&gt;&lt;span class="h2"&gt;Homeworks&lt;/span&gt;&lt;/p&gt;
 &lt;div class="no-bullets"&gt;
 &lt;ul&gt;
@@ -511,6 +526,15 @@ A photograph of the &lt;em&gt;Titanic&lt;/em&gt; leaving Southampton on April 10
 &lt;div class="no-bullets"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="/assignments/reading05/"&gt;&lt;i class="fa fa-book" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Reading 5&lt;/span&gt;&lt;/a&gt; (Complete by: Mar-25 @&amp;nbsp;11:59pm)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div style="margin-bottom: 1em"&gt;
+
+&lt;/div&gt;
+&lt;p&gt;&lt;span class="h2"&gt;Module&amp;nbsp;exercises&lt;/span&gt;&lt;/p&gt;
+&lt;div class="no-bullets"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/assignments/module05-exercises/"&gt;&lt;i class="fa fa-laptop" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Module 5 exercises&lt;/span&gt;&lt;/a&gt; (Due: Mar-25 @&amp;nbsp;11:59pm)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div style="margin-bottom: 1em"&gt;
@@ -1873,7 +1897,7 @@ data-fa-transform="grow-8"&gt; &lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href="/materials/module05-materials/"&gt;&lt;i
 class="fas fa-chalkboard-teacher"
 data-fa-transform="grow-8"&gt; &lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td style="text-align: left;"&gt;&lt;a href="/assignments/reading05/"&gt;Reading 5&lt;/a&gt; (Complete by: Mar-25)&lt;br&gt; &lt;a href="/assignments/minihw05-tidy-gradebook/"&gt;Mini-homework 5&lt;/a&gt; (Due: Mar-27 @ 11:59pm)&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;&lt;a href="/assignments/reading05/"&gt;Reading 5&lt;/a&gt; (Complete by: Mar-25)&lt;br&gt; &lt;a href="/assignments/module05-exercises/"&gt;Module 5 exercises&lt;/a&gt; (Due: Mar-25 @ 11:59pm)&lt;br&gt; &lt;a href="/assignments/minihw05-tidy-gradebook/"&gt;Mini-homework 5&lt;/a&gt; (Due: Mar-27 @ 11:59pm)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class="even"&gt;
 &lt;td style="text-align: left;"&gt;Module 6&lt;/td&gt;
