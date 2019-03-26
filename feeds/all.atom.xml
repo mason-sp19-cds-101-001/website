@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>CDS 101 - 001: Introduction to Computational and Data Sciences</title><link href="http://sp19-001.cds101.com/" rel="alternate"></link><link href="http://sp19-001.cds101.com/feeds/all.atom.xml" rel="self"></link><id>http://sp19-001.cds101.com/</id><updated>2019-04-03T23:59:00-04:00</updated><entry><title>Analyzing data distributions</title><link href="http://sp19-001.cds101.com/assignments/minihw06-analyzing-data-distributions/" rel="alternate"></link><published>2019-04-03T23:59:00-04:00</published><updated>2019-04-03T23:59:00-04:00</updated><author><name>Dr. Glasbrenner</name></author><id>tag:sp19-001.cds101.com,2019-04-03:/assignments/minihw06-analyzing-data-distributions/</id><summary type="html">A mini-homework for practicing how to analyze data distributions using basic statistical functions in R, ggplot2, and&amp;nbsp;dplyr.</summary><content type="html">&lt;p&gt;&lt;span class="h3"&gt;&lt;strong&gt;Due:&lt;/strong&gt; April 3, 2019 @&amp;nbsp;11:59pm&lt;/span&gt;&lt;/p&gt;
 &lt;div class="no-bullets"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fab fa-github-alt" data-fa-transform="grow-8"&gt;&lt;/i&gt;  GitHub Classroom repo for &lt;strong&gt;Mini-homework 6 – Analyzing data&amp;nbsp;distributions&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://classroom.github.com/a/WkYNYDMh"&gt;&lt;i class="fab fa-github-alt" data-fa-transform="grow-8"&gt;&lt;/i&gt;  GitHub Classroom repo for &lt;strong&gt;Mini-homework 6 – Analyzing data&amp;nbsp;distributions&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;h2 id="instructions"&gt;Instructions&lt;/h2&gt;
-&lt;p&gt;&lt;a href="#"&gt;Obtain the GitHub repository you will use to complete the mini-homework&lt;/a&gt;, which contains a starter file named &lt;span class="monospace"&gt;analyzing_data_distributions.Rmd&lt;/span&gt;. This mini-homework will guide you through examples demonstrating how to analyze a dataset using standard statistical functions in R, &lt;span class="monospace"&gt;ggplot2&lt;/span&gt;, and &lt;span class="monospace"&gt;dplyr&lt;/span&gt;. Read the &lt;a href="#about-the-dataset"&gt;About the dataset&lt;/a&gt; section to get some background information on the dataset that you’ll be working with. Each of the below &lt;a href="#exercises"&gt;exercises&lt;/a&gt; are to be completed in the provided spaces within your starter file &lt;span class="monospace"&gt;analyzing_data_distributions.Rmd&lt;/span&gt;. Then, when you’re ready to submit, follow the directions in the &lt;strong&gt;&lt;a href="#how-to-submit"&gt;How to submit&lt;/a&gt;&lt;/strong&gt; section&amp;nbsp;below.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://classroom.github.com/a/WkYNYDMh"&gt;Obtain the GitHub repository you will use to complete the mini-homework&lt;/a&gt;, which contains a starter file named &lt;span class="monospace"&gt;analyzing_data_distributions.Rmd&lt;/span&gt;. This mini-homework will guide you through examples demonstrating how to analyze a dataset using standard statistical functions in R, &lt;span class="monospace"&gt;ggplot2&lt;/span&gt;, and &lt;span class="monospace"&gt;dplyr&lt;/span&gt;. Read the &lt;a href="#about-the-dataset"&gt;About the dataset&lt;/a&gt; section to get some background information on the dataset that you’ll be working with. Each of the below &lt;a href="#exercises"&gt;exercises&lt;/a&gt; are to be completed in the provided spaces within your starter file &lt;span class="monospace"&gt;analyzing_data_distributions.Rmd&lt;/span&gt;. Then, when you’re ready to submit, follow the directions in the &lt;strong&gt;&lt;a href="#how-to-submit"&gt;How to submit&lt;/a&gt;&lt;/strong&gt; section&amp;nbsp;below.&lt;/p&gt;
 &lt;h2 id="about-the-dataset"&gt;About the&amp;nbsp;dataset&lt;/h2&gt;
 &lt;p&gt;The dataset we are using in this mini-homework come from the article “Exploring Relationships in Body Dimensions” by Peterson, Johnson, and Kerk published in Journal of Statistics Education Volume 11, Number 2 (2003), and consists of body girth and skeletal diameter measurements as well as the age, weight, height, and sex for 507 physically active individuals, 247 men and 260 women. &lt;strong&gt;Load the dataset by running the setup block at the top of your R Markdown file,&lt;/strong&gt; then inspect the dataset by running &lt;code&gt;View(body_dims)&lt;/code&gt; in the &lt;em&gt;Console&lt;/em&gt;&amp;nbsp;window.&lt;/p&gt;
 &lt;p&gt;The table below provides descriptions of the dataset’s 25&amp;nbsp;variables,&lt;/p&gt;
@@ -445,6 +445,15 @@
 &lt;div style="margin-bottom: 1em"&gt;
 
 &lt;/div&gt;
+&lt;p&gt;&lt;span class="h2"&gt;Homeworks&lt;/span&gt;&lt;/p&gt;
+&lt;div class="no-bullets"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/assignments/minihw06-analyzing-data-distributions/"&gt;&lt;i class="fa fa-pen-square" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Mini-homework 6 – Analyzing data distributions&lt;/span&gt;&lt;/a&gt; (Due: Apr-3 @&amp;nbsp;11:59pm)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div style="margin-bottom: 1em"&gt;
+
+&lt;/div&gt;
 &lt;p&gt;&lt;span class="h2"&gt;Videos&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;(Watch by:&amp;nbsp;Apr-1)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Data distributions - 01 - Quantifying data&amp;nbsp;distributions&lt;/strong&gt;&lt;/p&gt;
@@ -470,12 +479,19 @@
 &lt;p&gt;&lt;span class="h2"&gt;Slides&lt;/span&gt;&lt;/p&gt;
 &lt;div class="no-bullets"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="/doc/data_distributions_01_quantifying_data_distributions.pdf"&gt;&lt;i class="fas fa-file-pdf" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;01 - Quantifying data&amp;nbsp;distributions&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="/doc/data_distributions_02_quantifying_data_distributions_in_r.pdf"&gt;&lt;i class="fas fa-file-pdf" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;02 - Quantifying data distributions in&amp;nbsp;R&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="/doc/data_distributions_03_probability_mass_functions.pdf"&gt;&lt;i class="fas fa-file-pdf" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;03 …&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;span class="h2"&gt;Readings&lt;/span&gt;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="/doc/data_distributions_01_quantifying_data_distributions.pdf"&gt;&lt;i class="fas fa-file-pdf" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;01 …&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;span class="h2"&gt;Readings&lt;/span&gt;&lt;/p&gt;
 &lt;div class="no-bullets"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="/assignments/reading06/"&gt;&lt;i class="fa fa-book" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Reading 6&lt;/span&gt;&lt;/a&gt; (Complete by: Apr-1 @&amp;nbsp;11:59pm)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div style="margin-bottom: 1em"&gt;
+
+&lt;/div&gt;
+&lt;p&gt;&lt;span class="h2"&gt;Homeworks&lt;/span&gt;&lt;/p&gt;
+&lt;div class="no-bullets"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/assignments/minihw06-analyzing-data-distributions/"&gt;&lt;i class="fa fa-pen-square" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Mini-homework 6 – Analyzing data distributions&lt;/span&gt;&lt;/a&gt; (Due: Apr-3 @&amp;nbsp;11:59pm)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div style="margin-bottom: 1em"&gt;
@@ -2200,7 +2216,7 @@ data-fa-transform="grow-8"&gt; &lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href="/materials/module06-materials/"&gt;&lt;i
 class="fas fa-chalkboard-teacher"
 data-fa-transform="grow-8"&gt; &lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td style="text-align: left;"&gt;&lt;a href="/assignments/reading06/"&gt;Reading 6&lt;/a&gt; (Complete by: Apr-1)&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;&lt;a href="/assignments/reading06/"&gt;Reading 6&lt;/a&gt; (Complete by: Apr-1)&lt;br&gt; &lt;a href="/assignments/minihw06-analyzing-data-distributions/"&gt;Mini-homework 6&lt;/a&gt; (Due: Apr-3 @ 11:59pm)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class="odd"&gt;
 &lt;td style="text-align: left;"&gt;Module 7&lt;/td&gt;
