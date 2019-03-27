@@ -1,7 +1,7 @@
 Title: Spring 2019 Schedule
 Author: Dr. Glasbrenner
 Date: 2019-01-22 13:30
-Modified: 2019-03-18 08:00
+Modified: 2019-03-22 08:00
 Index_save_as: index.html
 Url: /index.html
 
@@ -37,8 +37,10 @@ Module 5         Feb-28<br>           Data reshaping (Tidy data)                
                  Mar-21                                                                             data-fa-transform="grow-8">        [Mini-homework 5] (Due: Mar-27 @ 11:59pm)
                                                                                                     </i>][module05-materials]
                  
-Module 6         Mar-26<br>           Data distributions
-                 Mar-28
+Module 6         Mar-26<br>           Data distributions                                            [<i                                [Reading 6] (Complete by: Apr-1)<br>
+                 Mar-28                                                                             class="fas fa-chalkboard-teacher"  [Module 6 exercises] (Due: Apr-1 @ 11:59pm)<br>
+                                                                                                    data-fa-transform="grow-8">        [Mini-homework 6] (Due: Apr-3 @ 11:59pm)
+                                                                                                    </i>][module06-materials]
 
 Module 7         Apr-02<br>           Inference and simulation
                  Apr-04<br>
@@ -60,6 +62,7 @@ Module 8         Apr-16<br>           Modeling
 [Reading 3]:          /assignments/reading03/
 [Reading 4]:          /assignments/reading04/
 [Reading 5]:          /assignments/reading05/
+[Reading 6]:          /assignments/reading06/
 [Homework 1]:         /assignments/homework-1/
 [Homework 2]:         /assignments/homework-2/
 [Mini-homework 1]:    /assignments/minihw01-can-twitter-predict-election-results/
@@ -68,11 +71,14 @@ Module 8         Apr-16<br>           Modeling
 [Mini-homework 3]:    /assignments/minihw03-visualization-by-example/
 [Mini-homework 4]:    /assignments/minihw04-flights-of-new-york/
 [Mini-homework 5]:    /assignments/minihw05-tidy-gradebook/
+[Mini-homework 6]:    /assignments/minihw06-analyzing-data-distributions/
 [Module 1 exercises]: /assignments/module01-exercises/
 [Module 4 exercises]: /assignments/module04-exercises/
 [Module 5 exercises]: /assignments/module05-exercises/
+[Module 6 exercises]: /assignments/module06-exercises/
 [module01-materials]: /materials/module01-materials/
 [module02-materials]: /materials/module02-materials/
 [module03-materials]: /materials/module03-materials/
 [module04-materials]: /materials/module04-materials/
 [module05-materials]: /materials/module05-materials/
+[module06-materials]: /materials/module06-materials/
