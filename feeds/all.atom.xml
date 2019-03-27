@@ -201,7 +201,13 @@
 &lt;li&gt;&lt;p&gt;&lt;a href="/doc/rmarkdown-cheatsheet.pdf"&gt;R Markdown&amp;nbsp;cheatsheet&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href="/doc/rmarkdown-reference.pdf"&gt;R Markdown&amp;nbsp;reference&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content><category term="mini-assignment"></category></entry><entry><title>Reading 6</title><link href="http://sp19-001.cds101.com/assignments/reading06/" rel="alternate"></link><published>2019-04-01T11:59:00-04:00</published><updated>2019-04-01T11:59:00-04:00</updated><author><name>Dr. Glasbrenner</name></author><id>tag:sp19-001.cds101.com,2019-04-01:/assignments/reading06/</id><summary type="html">&lt;p&gt;&lt;i class="fa fa-book" data-fa-transform="grow-4"&gt;&lt;/i&gt;  &lt;span class="h3"&gt;Introduction to computational and data sciences supplemental&amp;nbsp;book&lt;/span&gt;&lt;/p&gt;
+</content><category term="mini-assignment"></category></entry><entry><title>Module 6 exercises</title><link href="http://sp19-001.cds101.com/assignments/module06-exercises/" rel="alternate"></link><published>2019-04-01T23:59:00-04:00</published><updated>2019-04-01T23:59:00-04:00</updated><author><name>Dr. Glasbrenner</name></author><id>tag:sp19-001.cds101.com,2019-04-01:/assignments/module06-exercises/</id><summary type="html">For this module exercise, you will answer a series of questions that check your understanding of the material covered in the Module 6&amp;nbsp;lectures.</summary><content type="html">&lt;p&gt;&lt;span class="h3"&gt;&lt;strong&gt;Due:&lt;/strong&gt; April 1, 2019 @&amp;nbsp;11:59pm&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id="instructions"&gt;Instructions&lt;/h2&gt;
+&lt;p&gt;This module exercise is a series of questions &lt;strong&gt;posted on Blackboard&lt;/strong&gt; that check your understanding of the material contained in the &lt;a href="/materials/module06-materials/"&gt;module 6 lecture videos&lt;/a&gt;. You can go directly to the module exercise on Blackboard by &lt;a href="https://mymasonportal.gmu.edu/webapps/blackboard/content/listContent.jsp?course_id=_359486_1&amp;amp;content_id=_8989530_1"&gt;clicking here&lt;/a&gt;. This should be completed &lt;strong&gt;after&lt;/strong&gt; you have finished watching the lecture&amp;nbsp;videos.&lt;/p&gt;
+&lt;div class="callout primary"&gt;
+&lt;p&gt;There is no time limit and you may attempt the module exercises up to three times. Your grade will be the highest score you receive across your&amp;nbsp;attempts.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="module-exercise"></category></entry><entry><title>Reading 6</title><link href="http://sp19-001.cds101.com/assignments/reading06/" rel="alternate"></link><published>2019-04-01T11:59:00-04:00</published><updated>2019-04-01T11:59:00-04:00</updated><author><name>Dr. Glasbrenner</name></author><id>tag:sp19-001.cds101.com,2019-04-01:/assignments/reading06/</id><summary type="html">&lt;p&gt;&lt;i class="fa fa-book" data-fa-transform="grow-4"&gt;&lt;/i&gt;  &lt;span class="h3"&gt;Introduction to computational and data sciences supplemental&amp;nbsp;book&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;i class="fa fa-link"&gt;&lt;/i&gt;  Book &lt;span class="caps"&gt;URL&lt;/span&gt;: &lt;a href="http://book.cds101.com" class="uri"&gt;http://book.cds101.com&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Chapter 4: Representing&amp;nbsp;distributions&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -445,6 +451,15 @@
 &lt;div style="margin-bottom: 1em"&gt;
 
 &lt;/div&gt;
+&lt;p&gt;&lt;span class="h2"&gt;Module&amp;nbsp;exercises&lt;/span&gt;&lt;/p&gt;
+&lt;div class="no-bullets"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/assignments/module06-exercises/"&gt;&lt;i class="fa fa-laptop" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Module 6 exercises&lt;/span&gt;&lt;/a&gt; (Due: Apr-1 @&amp;nbsp;11:59pm)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div style="margin-bottom: 1em"&gt;
+
+&lt;/div&gt;
 &lt;p&gt;&lt;span class="h2"&gt;Homeworks&lt;/span&gt;&lt;/p&gt;
 &lt;div class="no-bullets"&gt;
 &lt;ul&gt;
@@ -466,23 +481,19 @@
 &lt;iframe src="https://www.youtube.com/embed/tvUw91TrWO4" width="420" height="350" frameborder="0" allowfullscreen&gt;
 &lt;/iframe&gt;
 &lt;!--/html_preserve--&gt;
-&lt;p&gt;&lt;strong&gt;Data distributions - 03 - Probability mass&amp;nbsp;functions&lt;/strong&gt;&lt;/p&gt;
-&lt;!--html_preserve--&gt;
-&lt;iframe src="https://www.youtube.com/embed/xbLim5imqe4" width="420" height="350" frameborder="0" allowfullscreen&gt;
-&lt;/iframe&gt;
-&lt;!--/html_preserve--&gt;
-&lt;p&gt;&lt;strong&gt;Data distributions - 04 - Cumulative distribution&amp;nbsp;functions&lt;/strong&gt;&lt;/p&gt;
-&lt;!--html_preserve--&gt;
-&lt;iframe src="https://www.youtube.com/embed/WC3YL8Npujw" width="420" height="350" frameborder="0" allowfullscreen&gt;
-&lt;/iframe&gt;
-&lt;!--/html_preserve--&gt;
-&lt;p&gt;&lt;span class="h2"&gt;Slides&lt;/span&gt;&lt;/p&gt;
-&lt;div class="no-bullets"&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="/doc/data_distributions_01_quantifying_data_distributions.pdf"&gt;&lt;i class="fas fa-file-pdf" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;01 …&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;span class="h2"&gt;Readings&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Data distributions - 03 - Probability mass …&lt;/strong&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;span class="h2"&gt;Readings&lt;/span&gt;&lt;/p&gt;
 &lt;div class="no-bullets"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="/assignments/reading06/"&gt;&lt;i class="fa fa-book" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Reading 6&lt;/span&gt;&lt;/a&gt; (Complete by: Apr-1 @&amp;nbsp;11:59pm)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div style="margin-bottom: 1em"&gt;
+
+&lt;/div&gt;
+&lt;p&gt;&lt;span class="h2"&gt;Module&amp;nbsp;exercises&lt;/span&gt;&lt;/p&gt;
+&lt;div class="no-bullets"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/assignments/module06-exercises/"&gt;&lt;i class="fa fa-laptop" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Module 6 exercises&lt;/span&gt;&lt;/a&gt; (Due: Apr-1 @&amp;nbsp;11:59pm)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div style="margin-bottom: 1em"&gt;
@@ -2216,7 +2227,7 @@ data-fa-transform="grow-8"&gt; &lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href="/materials/module06-materials/"&gt;&lt;i
 class="fas fa-chalkboard-teacher"
 data-fa-transform="grow-8"&gt; &lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td style="text-align: left;"&gt;&lt;a href="/assignments/reading06/"&gt;Reading 6&lt;/a&gt; (Complete by: Apr-1)&lt;br&gt; &lt;a href="/assignments/minihw06-analyzing-data-distributions/"&gt;Mini-homework 6&lt;/a&gt; (Due: Apr-3 @ 11:59pm)&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;&lt;a href="/assignments/reading06/"&gt;Reading 6&lt;/a&gt; (Complete by: Apr-1)&lt;br&gt; &lt;a href="/assignments/module06-exercises/"&gt;Module 6 exercises&lt;/a&gt; (Due: Apr-1 @ 11:59pm)&lt;br&gt; &lt;a href="/assignments/minihw06-analyzing-data-distributions/"&gt;Mini-homework 6&lt;/a&gt; (Due: Apr-3 @ 11:59pm)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class="odd"&gt;
 &lt;td style="text-align: left;"&gt;Module 7&lt;/td&gt;
