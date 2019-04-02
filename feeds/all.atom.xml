@@ -181,11 +181,11 @@ Treatment
   calculate(stat = &amp;quot;...&amp;quot;,  order = combine(&amp;quot;...&amp;quot;, &amp;quot;...&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Notice that we just took the template from Exercise 7 and removed the &lt;code&gt;hypothesize()&lt;/code&gt; and &lt;code&gt;generate()&lt;/code&gt; lines.&lt;/p&gt;
 &lt;p&gt;Next, if we wanted to compute the &lt;em&gt;p&lt;/em&gt;-value manually, we would need to count how many simulations gave us a result that was the same or more extreme than the experimental result and then divide by 10,000, which is the total number of simulations we ran. Lucky for us, the &lt;span class="monospace"&gt;infer&lt;/span&gt; package has a convenience function, &lt;code&gt;get_p_value()&lt;/code&gt;, for calculating p-values so that we don’t have to do it manually. To compute the &lt;em&gt;p&lt;/em&gt;-value of a one-sided hypothesis test, we&amp;nbsp;run,&lt;/p&gt;
-&lt;pre class="r"&gt;&lt;code&gt;yawn_obs_stat %&amp;gt;%
+&lt;pre class="r"&gt;&lt;code&gt;yawn_null %&amp;gt;%
   get_p_value(obs_stat = yawn_obs_stat, direction = &amp;quot;right&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;To visualize the range of outcomes in the null distribution that are the same or more extreme than &lt;span class="monospace"&gt;yawn_obs_stat&lt;/span&gt;, we&amp;nbsp;run,&lt;/p&gt;
-&lt;pre class="r"&gt;&lt;code&gt;yawn_obs_stat %&amp;gt;%
-  visualize() %&amp;gt;%
+&lt;pre class="r"&gt;&lt;code&gt;yawn_null %&amp;gt;%
+  visualize() +
   shade_p_value(obs_stat = yawn_obs_stat, direction = &amp;quot;right&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Based on these results and a significance level of &lt;span class="math inline"&gt;\(\alpha = 0.05\)&lt;/span&gt;, conclude whether or not we have sufficient evidence to reject the null&amp;nbsp;hypothesis.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;It’s often prudent to run a &lt;strong&gt;two-sided hypothesis test&lt;/strong&gt; instead of the one-sided version, as it is more strict and hence stronger evidence is needed before the &lt;span class="math inline"&gt;\(\alpha = 0.05\)&lt;/span&gt; significance threshold is crossed. Switching from a one-sided test to a two-sided test simply requires that you replace &lt;span class="monospace"&gt;direction = “right”&lt;/span&gt; with &lt;span class="monospace"&gt;direction = “both”&lt;/span&gt; in &lt;code&gt;get_p_value()&lt;/code&gt; and &lt;code&gt;shade_p_value()&lt;/code&gt;. Do this and compute the &lt;em&gt;p&lt;/em&gt;-value and visualization for the two-sided hypothesis test. Assuming a significance level of &lt;span class="math inline"&gt;\(\alpha = 0.05\)&lt;/span&gt;, do we have sufficient evidence to reject the null&amp;nbsp;hypothesis?&lt;/p&gt;&lt;/li&gt;
@@ -196,7 +196,7 @@ Treatment
   calculate(stat = &amp;quot;...&amp;quot;, order = combine(&amp;quot;...&amp;quot;, &amp;quot;...&amp;quot;))&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;We obtain the 95% confidence interval by running the following&amp;nbsp;code,&lt;/p&gt;
 &lt;pre class="r"&gt;&lt;code&gt;yawn_ci &amp;lt;- yawn_bootstrap %&amp;gt;%
-  get_conifdence_interval()&lt;/code&gt;&lt;/pre&gt;
+  get_confidence_interval()&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;To visualize the 95% confidence interval, we run the following&amp;nbsp;code,&lt;/p&gt;
 &lt;pre class="r"&gt;&lt;code&gt;yawn_bootstrap %&amp;gt;%
   visualize() +

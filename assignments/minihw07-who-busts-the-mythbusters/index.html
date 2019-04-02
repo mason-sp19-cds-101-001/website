@@ -245,11 +245,11 @@ Treatment
   calculate(stat = &quot;...&quot;,  order = combine(&quot;...&quot;, &quot;...&quot;))</code></pre>
 <p>Notice that we just took the template from Exercise 7 and removed the <code>hypothesize()</code> and <code>generate()</code> lines.</p>
 <p>Next, if we wanted to compute the <em>p</em>-value manually, we would need to count how many simulations gave us a result that was the same or more extreme than the experimental result and then divide by 10,000, which is the total number of simulations we ran. Lucky for us, the <span class="monospace">infer</span> package has a convenience function, <code>get_p_value()</code>, for calculating p-values so that we don’t have to do it manually. To compute the <em>p</em>-value of a one-sided hypothesis test, we&nbsp;run,</p>
-<pre class="r"><code>yawn_obs_stat %&gt;%
+<pre class="r"><code>yawn_null %&gt;%
   get_p_value(obs_stat = yawn_obs_stat, direction = &quot;right&quot;)</code></pre>
 <p>To visualize the range of outcomes in the null distribution that are the same or more extreme than <span class="monospace">yawn_obs_stat</span>, we&nbsp;run,</p>
-<pre class="r"><code>yawn_obs_stat %&gt;%
-  visualize() %&gt;%
+<pre class="r"><code>yawn_null %&gt;%
+  visualize() +
   shade_p_value(obs_stat = yawn_obs_stat, direction = &quot;right&quot;)</code></pre>
 <p>Based on these results and a significance level of <span class="math inline">\(\alpha = 0.05\)</span>, conclude whether or not we have sufficient evidence to reject the null&nbsp;hypothesis.</p></li>
 <li><p>It’s often prudent to run a <strong>two-sided hypothesis test</strong> instead of the one-sided version, as it is more strict and hence stronger evidence is needed before the <span class="math inline">\(\alpha = 0.05\)</span> significance threshold is crossed. Switching from a one-sided test to a two-sided test simply requires that you replace <span class="monospace">direction = “right”</span> with <span class="monospace">direction = “both”</span> in <code>get_p_value()</code> and <code>shade_p_value()</code>. Do this and compute the <em>p</em>-value and visualization for the two-sided hypothesis test. Assuming a significance level of <span class="math inline">\(\alpha = 0.05\)</span>, do we have sufficient evidence to reject the null&nbsp;hypothesis?</p></li>
@@ -260,7 +260,7 @@ Treatment
   calculate(stat = &quot;...&quot;, order = combine(&quot;...&quot;, &quot;...&quot;))</code></pre></li>
 <li><p>We obtain the 95% confidence interval by running the following&nbsp;code,</p>
 <pre class="r"><code>yawn_ci &lt;- yawn_bootstrap %&gt;%
-  get_conifdence_interval()</code></pre>
+  get_confidence_interval()</code></pre>
 <p>To visualize the 95% confidence interval, we run the following&nbsp;code,</p>
 <pre class="r"><code>yawn_bootstrap %&gt;%
   visualize() +
