@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>CDS 101 - 001: Introduction to Computational and Data Sciences</title><link href="http://sp19-001.cds101.com/" rel="alternate"></link><link href="http://sp19-001.cds101.com/feeds/all.atom.xml" rel="self"></link><id>http://sp19-001.cds101.com/</id><updated>2019-04-19T23:59:00-04:00</updated><entry><title>Homework 3</title><link href="http://sp19-001.cds101.com/assignments/homework-3/" rel="alternate"></link><published>2019-04-19T23:59:00-04:00</published><updated>2019-04-19T23:59:00-04:00</updated><author><name>Dr. Glasbrenner</name></author><id>tag:sp19-001.cds101.com,2019-04-19:/assignments/homework-3/</id><summary type="html">For your third major homework assignment, you will use statistical inference to answer a question about the National Survey of Family Growth, Cycle 6 dataset published by the National Center for Health&amp;nbsp;Statistics.</summary><content type="html">&lt;p&gt;&lt;span class="h3"&gt;&lt;strong&gt;Due:&lt;/strong&gt; April 19, 2019 @&amp;nbsp;11:59pm&lt;/span&gt;&lt;/p&gt;
+&lt;div class="no-bullets"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://classroom.github.com/g/xWXtHt8c"&gt;&lt;i class="fab fa-github-alt" data-fa-transform="grow-8"&gt;&lt;/i&gt;  Github Classroom repo for &lt;strong&gt;Homework&amp;nbsp;3&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 &lt;h2 id="instructions"&gt;Instructions&lt;/h2&gt;
 &lt;p&gt;The first part of this page explains how homework assignments will be handled and evaluated, since they are completed in groups. The questions for Homework 3 start further down, &lt;a href="#the-national-survey-of-family-growth-dataset"&gt;click this link to skip to that part of the page&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id="overview"&gt;Overview&lt;/h3&gt;
@@ -686,7 +691,8 @@ Treatment
 &lt;p&gt;&lt;span class="h2"&gt;Homeworks&lt;/span&gt;&lt;/p&gt;
 &lt;div class="no-bullets"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="/assignments/minihw07-who-busts-the-mythbusters/"&gt;&lt;i class="fa fa-pen-square" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Mini-homework 7 – Who busts the Mythbusters?&lt;/span&gt;&lt;/a&gt; (Due: Apr-10 @&amp;nbsp;11:59pm)&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="/assignments/minihw07-who-busts-the-mythbusters/"&gt;&lt;i class="fa fa-pen-square" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Mini-homework 7 – Who busts the Mythbusters?&lt;/span&gt;&lt;/a&gt; (Due: Apr-10 @&amp;nbsp;11:59pm)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/assignments/homework-3/"&gt;&lt;i class="fas fa-pencil-alt" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Homework 3 – National Survey of Family Growth&lt;/span&gt;&lt;/a&gt; (Due: Apr-19 @&amp;nbsp;11:59pm)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;span class="h2"&gt;Slides&lt;/span&gt;&lt;/p&gt;
@@ -694,8 +700,7 @@ Treatment
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href="/doc/inference_and_simulation_01_gender_discrimination_case_study.pdf"&gt;&lt;i class="fas fa-file-pdf" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;01 - Gender discrimination case&amp;nbsp;study&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href="/doc/inference_and_simulation_02_a_hypothesis_test_as_a_court_trial.pdf"&gt;&lt;i class="fas fa-file-pdf" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;02 - A hypothesis test as a court&amp;nbsp;trial&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="/doc/inference_and_simulation_03_a_manual_simulation_of_the_gender_discrimination_experiment.pdf"&gt;&lt;i class="fas fa-file-pdf" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;03 - A manual simulation of the gender discrimination&amp;nbsp;experiment&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/doc/inference_and_simulation_04_simulating_the_gender_discrimination_experiment_in_r.pdf"&gt;&lt;i class="fas fa-file-pdf" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;04 - Simulating the gender discrimination experiment in&amp;nbsp;R …&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;span class="h2"&gt;Readings&lt;/span&gt;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="/doc/inference_and_simulation_03_a_manual_simulation_of_the_gender_discrimination_experiment.pdf"&gt;&lt;i class="fas fa-file-pdf" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;03 - A manual simulation of the …&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;span class="h2"&gt;Readings&lt;/span&gt;&lt;/p&gt;
 &lt;div class="no-bullets"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="/assignments/reading07/"&gt;&lt;i class="fa fa-book" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Reading 7&lt;/span&gt;&lt;/a&gt; (Complete by: Apr-8 @&amp;nbsp;11:59pm)&lt;/li&gt;
@@ -707,7 +712,8 @@ Treatment
 &lt;p&gt;&lt;span class="h2"&gt;Homeworks&lt;/span&gt;&lt;/p&gt;
 &lt;div class="no-bullets"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="/assignments/minihw07-who-busts-the-mythbusters/"&gt;&lt;i class="fa fa-pen-square" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Mini-homework 7 – Who busts the Mythbusters?&lt;/span&gt;&lt;/a&gt; (Due: Apr-10 @&amp;nbsp;11:59pm)&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="/assignments/minihw07-who-busts-the-mythbusters/"&gt;&lt;i class="fa fa-pen-square" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Mini-homework 7 – Who busts the Mythbusters?&lt;/span&gt;&lt;/a&gt; (Due: Apr-10 @&amp;nbsp;11:59pm)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/assignments/homework-3/"&gt;&lt;i class="fas fa-pencil-alt" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Homework 3 – National Survey of Family Growth&lt;/span&gt;&lt;/a&gt; (Due: Apr-19 @&amp;nbsp;11:59pm)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;span class="h2"&gt;Slides&lt;/span&gt;&lt;/p&gt;
@@ -2605,7 +2611,7 @@ ggplot(data=iris) +
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-</content></entry><entry><title>Spring 2019 Schedule</title><link href="http://sp19-001.cds101.com//index.html" rel="alternate"></link><published>2019-01-22T13:30:00-05:00</published><updated>2019-04-01T08:00:00-04:00</updated><author><name>Dr. Glasbrenner</name></author><id>tag:sp19-001.cds101.com,2019-01-22://index.html</id><summary type="html">&lt;table&gt;
+</content></entry><entry><title>Spring 2019 Schedule</title><link href="http://sp19-001.cds101.com//index.html" rel="alternate"></link><published>2019-01-22T13:30:00-05:00</published><updated>2019-04-04T08:00:00-04:00</updated><author><name>Dr. Glasbrenner</name></author><id>tag:sp19-001.cds101.com,2019-01-22://index.html</id><summary type="html">&lt;table&gt;
 &lt;colgroup&gt;
 &lt;col style="width: 9%" /&gt;
 &lt;col style="width: 11%" /&gt;
@@ -2732,7 +2738,7 @@ data-fa-transform="grow-8"&gt; &lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href="/materials/module07-materials/"&gt;&lt;i
 class="fas fa-chalkboard-teacher"
 data-fa-transform="grow-8"&gt; &lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td style="text-align: left;"&gt;&lt;a href="/assignments/reading07/"&gt;Reading 7&lt;/a&gt; (Complete by: Apr-8)&lt;br&gt; &lt;a href="/assignments/minihw07-who-busts-the-mythbusters/"&gt;Mini-homework 7&lt;/a&gt; (Due: Apr-10 @ 11:59pm)&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;&lt;a href="/assignments/reading07/"&gt;Reading 7&lt;/a&gt; (Complete by: Apr-8)&lt;br&gt; &lt;a href="/assignments/minihw07-who-busts-the-mythbusters/"&gt;Mini-homework 7&lt;/a&gt; (Due: Apr-10 @ 11:59pm) &lt;a href="/assignments/homework-3/"&gt;Homework 3&lt;/a&gt; (Due: Apr-19 @ 11:59pm)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class="even"&gt;
 &lt;td style="text-align: left;"&gt;Module 8&lt;/td&gt;
