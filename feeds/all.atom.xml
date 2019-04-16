@@ -1,5 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>CDS 101 - 001: Introduction to Computational and Data Sciences</title><link href="http://sp19-001.cds101.com/" rel="alternate"></link><link href="http://sp19-001.cds101.com/feeds/all.atom.xml" rel="self"></link><id>http://sp19-001.cds101.com/</id><updated>2019-04-19T23:59:00-04:00</updated><entry><title>Homework 3</title><link href="http://sp19-001.cds101.com/assignments/homework-3/" rel="alternate"></link><published>2019-04-19T23:59:00-04:00</published><updated>2019-04-19T23:59:00-04:00</updated><author><name>Dr. Glasbrenner</name></author><id>tag:sp19-001.cds101.com,2019-04-19:/assignments/homework-3/</id><summary type="html">For your third major homework assignment, you will use statistical inference to answer a question about the National Survey of Family Growth, Cycle 6 dataset published by the National Center for Health&amp;nbsp;Statistics.</summary><content type="html">&lt;p&gt;&lt;span class="h3"&gt;&lt;strong&gt;Due:&lt;/strong&gt; April 19, 2019 @&amp;nbsp;11:59pm&lt;/span&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CDS 101 - 001: Introduction to Computational and Data Sciences</title><link href="http://sp19-001.cds101.com/" rel="alternate"></link><link href="http://sp19-001.cds101.com/feeds/all.atom.xml" rel="self"></link><id>http://sp19-001.cds101.com/</id><updated>2019-04-24T23:59:00-04:00</updated><entry><title>Under (blood) pressure</title><link href="http://sp19-001.cds101.com/assignments/minihw08-under-blood-pressure/" rel="alternate"></link><published>2019-04-24T23:59:00-04:00</published><updated>2019-04-24T23:59:00-04:00</updated><author><name>Dr. Glasbrenner</name></author><id>tag:sp19-001.cds101.com,2019-04-24:/assignments/minihw08-under-blood-pressure/</id><summary type="html">A mini-homework for practicing how to build and analyze linear regression&amp;nbsp;models.</summary><content type="html">&lt;p&gt;&lt;span class="h3"&gt;&lt;strong&gt;Due:&lt;/strong&gt; April 24, 2019 @&amp;nbsp;11:59pm&lt;/span&gt;&lt;/p&gt;
+&lt;div class="no-bullets"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://classroom.github.com/a/G7Tb5JTN"&gt;&lt;i class="fab fa-github-alt" data-fa-transform="grow-8"&gt;&lt;/i&gt;  GitHub Classroom repo for &lt;strong&gt;Mini-homework 8 – Under (blood)&amp;nbsp;pressure&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h2 id="instructions"&gt;Instructions&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://classroom.github.com/a/G7Tb5JTN"&gt;Obtain the GitHub repository you will use to complete the mini-homework&lt;/a&gt;, which contains a starter file named &lt;span class="monospace"&gt;pressure.Rmd&lt;/span&gt;. This mini-homework will guide you through… Read the &lt;a href="#about-the-dataset"&gt;About the dataset&lt;/a&gt; section to get some background information on the dataset that you’ll be working with. Each of the below &lt;a href="#exercises"&gt;exercises&lt;/a&gt; are to be completed in the provided spaces within your starter file &lt;span class="monospace"&gt;pressure.Rmd&lt;/span&gt;. Then, when you’re ready to submit, follow the directions in the &lt;strong&gt;&lt;a href="#how-to-submit"&gt;How to submit&lt;/a&gt;&lt;/strong&gt; section&amp;nbsp;below.&lt;/p&gt;
+&lt;h2 id="about-the-dataset"&gt;About the&amp;nbsp;dataset&lt;/h2&gt;
+&lt;p&gt;The dataset&lt;a href="#fn1" class="footnote-ref" id="fnref1"&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; we are using in this mini-homework comes from a study conducted by anthropologists to determine the long-term effects of a change in environment on blood pressure. They measured the blood pressure of individuals who had migrated from a pre-modern environment high in the Andes mountains of Peru into the mainstream of Peruvian society at a much lower altitude. The motivation for looking at blood pressure for this group of individuals comes from a prior study in Africa, which suggested that migration from a simpler society to a more technologically complex one might increase blood pressure at first, but that the blood pressure would tend to decrease back to normal over time. The anthropologists recorded systolic blood pressure measurements as it is often a more sensitive indicator compared to diastolic measurements, as well as each participant’s height, weight, and a number of other characteristics. All these data are for males over 21 who were born at a high altitude and whose parents were born at a high&amp;nbsp;altitude.&lt;/p&gt;
+&lt;p&gt;Using this collected data, we aim to answer the research&amp;nbsp;question,&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;All else kept equal, does the amount of time spent in an urban environment affect the blood pressure of individuals that recently migrated from a pre-modern&amp;nbsp;society?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;You might wonder if the features in the &lt;span class="monospace"&gt;infer&lt;/span&gt; package would be sufficient to address this question. The &lt;span class="monospace"&gt;infer&lt;/span&gt; package could be used to determine whether or not time spent in an urban environment has any effect at all, such that we could conclude “yes it does” or “no it doesn’t.” What it won’t let us do is predict the blood pressure of another individual that did not participate in the study or help to quantify how &lt;strong&gt;much&lt;/strong&gt; of an effect time spent in an urban environment has relative to the other measurements taken during the study. If we want to predict things based on what we see in the dataset and analyze the relative importance of different variables, we will need to build a model. There are many types of models out there, and for this mini-homework we will focus on building a &lt;em&gt;linear regression model&lt;/em&gt; for this&amp;nbsp;dataset.&lt;/p&gt;
+&lt;p&gt;The dataset &lt;span class="monospace"&gt;blood_pressure&lt;/span&gt; contains 9 variables and 39&amp;nbsp;rows,&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class="header"&gt;
+&lt;th&gt;Variable&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class="odd"&gt;
+&lt;td&gt;&lt;span class="monospace"&gt;Systol&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;systolic blood pressure&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="even"&gt;
+&lt;td&gt;&lt;span class="monospace"&gt;Age&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;age&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="odd"&gt;
+&lt;td&gt;&lt;span class="monospace"&gt;Years&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;years in urban area&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="even"&gt;
+&lt;td&gt;&lt;span class="monospace"&gt;Weight&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;weight (kg)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="odd"&gt;
+&lt;td&gt;&lt;span class="monospace"&gt;Height&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;height (mm)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="even"&gt;
+&lt;td&gt;&lt;span class="monospace"&gt;Chin&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;chin skinfold&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="odd"&gt;
+&lt;td&gt;&lt;span class="monospace"&gt;Forearm&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;forearm skinfold&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="even"&gt;
+&lt;td&gt;&lt;span class="monospace"&gt;Calf&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;calf skinfold&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="odd"&gt;
+&lt;td&gt;&lt;span class="monospace"&gt;Pulse&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;resting pulse rate&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="exercises"&gt;Exercises&lt;/h2&gt;
+&lt;ol class="example" type="1"&gt;
+&lt;li&gt;&lt;p&gt;As always, we begin by creating visualizations to help familiarize ourselves with the dataset. Since we are interested in how the variable &lt;span class="monospace"&gt;Systol&lt;/span&gt; is affected by the other variables in the dataset, let’s use &lt;code&gt;facet_wrap()&lt;/code&gt; to create a sequence of scatter plots that will show us which variables correlate with &lt;span class="monospace"&gt;Systol&lt;/span&gt;. Fill in the ellipses &lt;span class="monospace"&gt;…&lt;/span&gt; in the following template to create the&amp;nbsp;visualization,&lt;/p&gt;
+&lt;pre class="r"&gt;&lt;code&gt;blood_pressure %&amp;gt;%
+  gather(..., key = &amp;quot;variable&amp;quot;, value = &amp;quot;value&amp;quot;) %&amp;gt;%
+  ggplot() +
+  geom_point(mapping = aes(x = ..., y = ...)) +
+  facet_wrap(~ ..., scales = &amp;quot;free_x&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The missing input in &lt;code&gt;gather()&lt;/code&gt; should grab all the columns in the range &lt;span class="monospace"&gt;Age&lt;/span&gt; through &lt;span class="monospace"&gt;Pulse&lt;/span&gt;. In the plot, fill in the missing inputs so that the &lt;strong&gt;vertical axis&lt;/strong&gt; is &lt;span class="monospace"&gt;Systol&lt;/span&gt;, the &lt;strong&gt;horizontal axis&lt;/strong&gt; is the value of the other variable, and the faceting is done over the different variable&amp;nbsp;names.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Does the &lt;span class="monospace"&gt;Years&lt;/span&gt; variable have a positive or negative correlation with &lt;span class="monospace"&gt;Systol&lt;/span&gt;? Are there any other variables that follow a similar trend with respect to &lt;span class="monospace"&gt;Systol&lt;/span&gt;? Which variables show a moderate to strong &lt;em&gt;positive&lt;/em&gt; correlation with &lt;span class="monospace"&gt;Systol&lt;/span&gt;?&lt;/p&gt;
+&lt;div class="callout primary"&gt;
+&lt;p&gt;&lt;span class="h4"&gt;Reminder&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;span class="monospace"&gt;Years&lt;/span&gt; variable is the number of years that an individual has lived in an urban&amp;nbsp;environment.&lt;/p&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A common preprocessing step in model building is to combine or transform some of the variables to create additional columns that may improve the accuracy of a model. Our research question asks whether the length of time spent living in an urban environment correlates with decreased blood pressure over time. To figure this out, we could just look at &lt;span class="monospace"&gt;Years&lt;/span&gt;, but it may be that any trends in the &lt;span class="monospace"&gt;Years&lt;/span&gt; variable are confounded by the overall age of the individual. Account for the effect of age by using &lt;code&gt;mutate()&lt;/code&gt; to create a new column by computing the ratio &lt;span class="math inline"&gt;\(\text{urban\_frac\_life}=\dfrac{\text{Years}}{\text{Age}}\)&lt;/span&gt;. Assign the resulting data frame with these two new columns to &lt;span class="monospace"&gt;blood_pressure_updated&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;We’re now ready to create our first linear regression model using the &lt;code&gt;lm()&lt;/code&gt; function! Try the following as an example, which builds a linear regression model of &lt;span class="monospace"&gt;Systol&lt;/span&gt; using &lt;span class="monospace"&gt;urban_frac_life&lt;/span&gt; as the explanatory&amp;nbsp;variable,&lt;/p&gt;
+&lt;pre class="r"&gt;&lt;code&gt;systol_urban_frac_model &amp;lt;- lm(Systol ~ urban_frac_life, data = blood_pressure_updated)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After building the model, use the following two convenience functions from the &lt;span class="monospace"&gt;broom&lt;/span&gt; package to get a basic overview of the model. To get a data frame summarizing the model parameters, use the &lt;code&gt;tidy()&lt;/code&gt; function,&lt;/p&gt;
+&lt;pre class="r"&gt;&lt;code&gt;systol_urban_frac_model %&amp;gt;%
+  tidy()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The values under the &lt;span class="monospace"&gt;estimate&lt;/span&gt; column give us the intercept and slope of our linear model (remember &lt;span class="math inline"&gt;\(y=mx+b\)&lt;/span&gt;?). Additional information about the model, such as the model’s &lt;span class="math inline"&gt;\(R^{2}\)&lt;/span&gt; paramter, can be obtained using the &lt;code&gt;glance()&lt;/code&gt; function:&lt;/p&gt;
+&lt;pre class="r"&gt;&lt;code&gt;systol_urban_frac_model %&amp;gt;%
+  glance()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;span class="math inline"&gt;\(R^{2}\)&lt;/span&gt; value represents the proportion of variability in the response variable that is explained by the explanatory variable. If &lt;span class="math inline"&gt;\(R^{2}\)&lt;/span&gt; is close to 1, that means that the model is doing an excellent job capturing the variability of the response variable. If it is close to 0, then it is doing a poor job capturing the variability of the response&amp;nbsp;variable.&lt;/p&gt;
+&lt;div class="callout primary"&gt;
+&lt;p&gt;&lt;span class="h4"&gt;Reminder&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Notice that we are using the same formula syntax in &lt;code&gt;lm()&lt;/code&gt; to specify the model as we used in the &lt;code&gt;specify()&lt;/code&gt; function from the &lt;span class="monospace"&gt;infer&lt;/span&gt; package. Remember, the response variable goes on the left side of the tilde &lt;span class="monospace"&gt;~&lt;/span&gt; and the explanatory variable goes on the right&amp;nbsp;side.&lt;/p&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;After building a model, we would like to know what it predicts and how accurate the predictions are. One way to capture the accuracy of the predictions is to calculate the &lt;strong&gt;residuals&lt;/strong&gt;, which tell us how far off any given prediction is from the true value. The &lt;span class="monospace"&gt;modelr&lt;/span&gt; package, which is part of the &lt;span class="monospace"&gt;tidyverse&lt;/span&gt;, provides us with functions for adding model predictions and residuals to our data frame. To do this for our model &lt;span class="monospace"&gt;Systol ~ urban_frac_life&lt;/span&gt;, we pipe our dataset into two functions, &lt;code&gt;add_predictions()&lt;/code&gt; and &lt;code&gt;add_residuals()&lt;/code&gt;, which each take the model &lt;code&gt;systol_urban_frac_model&lt;/code&gt; that we built earlier as&amp;nbsp;input,&lt;/p&gt;
+&lt;pre class="r"&gt;&lt;code&gt;systol_urban_frac_df &amp;lt;- blood_pressure_updated %&amp;gt;%
+  add_predictions(systol_urban_frac_model) %&amp;gt;%
+  add_residuals(systol_urban_frac_model)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The predictions are added under a new column called &lt;span class="monospace"&gt;pred&lt;/span&gt; and the residuals are added under a new column called &lt;span class="monospace"&gt;resid&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Now that we’ve made our predictions and calculated the residuals, let’s create some visualizations to investigate how well our model performs. First, let’s plot the model fit on top of the &lt;span class="monospace"&gt;Systol&lt;/span&gt; versus &lt;span class="monospace"&gt;urban_frac_life&lt;/span&gt; scatter plot. To create this visualization, we will need the slope and intercept we printed out in Exercise 4, which should be filled in the template code&amp;nbsp;below,&lt;/p&gt;
+&lt;pre class="r"&gt;&lt;code&gt;ggplot(systol_urban_frac_df) +
+  geom_point(mapping = aes(x = ..., y = ...)) +
+  geom_abline(slope = ..., intercept = ...)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As before, you will need to fill in the ellipses &lt;span class="monospace"&gt;…&lt;/span&gt; to create the&amp;nbsp;plot.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The one problem with the plot in Exercise 6 is that it can only be made when your model has a single explanatory variable. If you create a model with two or more explanatory variables, you will need a different type of plot to visualize the predictive power of your model. One such plot is the &lt;em&gt;observed versus predicted plot&lt;/em&gt;, which is created as&amp;nbsp;follows,&lt;/p&gt;
+&lt;pre class="r"&gt;&lt;code&gt;ggplot(systol_urban_frac_df) +
+  geom_point(aes(pred, Systol)) +
+  geom_abline(
+    slope = 1,
+    intercept = 0,
+    color = &amp;quot;red&amp;quot;,
+    size = 1
+  )&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Alternatively, you can use a &lt;em&gt;residual versus predicted plot&lt;/em&gt;,&lt;/p&gt;
+&lt;pre class="r"&gt;&lt;code&gt;ggplot(systol_urban_frac_df) +
+  geom_point(aes(pred, resid)) +
+  geom_ref_line(h = 0)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Make both of these plots in your R Markdown&amp;nbsp;file.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;It is also important to inspect the residuals to see what the prediction error is like. It is typical to visualize the residuals using a histogram to get a sense of their center, shape, and overall spread. Create a histogram of the &lt;span class="monospace"&gt;resid&lt;/span&gt; column in &lt;span class="monospace"&gt;systol_urban_frac_df&lt;/span&gt;, making sure you choose an appropriate bin width for the distribution. What is the shape and center of the&amp;nbsp;residuals?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;How do we know if a linear regression model is reliable? In general, three conditions must be met in order for a linear model built using &lt;code&gt;lm()&lt;/code&gt; to be&amp;nbsp;reliable:&lt;/p&gt;
+&lt;ol type="1"&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Linearity:&lt;/strong&gt; The relationship between the explanatory variable and the response variable must be&amp;nbsp;linear&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Nearly normal residuals:&lt;/strong&gt; The residuals should be nearly normal (i.e. follow a bell curve&amp;nbsp;shape)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Constant variability:&lt;/strong&gt; The variability of the points around the model line should be roughly&amp;nbsp;constant&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The first and third conditions, &lt;strong&gt;linearity&lt;/strong&gt; and &lt;strong&gt;constant variability&lt;/strong&gt;, can be determined from the plots created in Exercise 7. Look at your &lt;em&gt;observed versus predicted&lt;/em&gt; and &lt;em&gt;residual versus predicted&lt;/em&gt; plots again. If the points in either plot appear to follow a non-linear (curved) trend, then that’s a tell-tale sign that the condition for linearity has been violated. Similarly, in the &lt;em&gt;residual versus predicted&lt;/em&gt; plot, if the residual spread seems to meaningfully increase or decrease as the predicted value changes then the constant variability condition has been violated. Interpret the plots and conclude whether or not the relationship between &lt;span class="monospace"&gt;Systol&lt;/span&gt; and &lt;span class="monospace"&gt;urban_frac_life&lt;/span&gt; is linear or non-linear and whether constant variability is&amp;nbsp;violated.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The histogram we created in Exercise 8 can give us a basic idea of whether the second condition, &lt;strong&gt;nearly normal residuals&lt;/strong&gt;, is violated, but we should have a more precise method for figuring this out. A useful method for determining if the residuals are nearly normal is to build a Q-Q plot using &lt;code&gt;geom_qq()&lt;/code&gt;, which creates a plot that shows us precisely where the distribution of residuals deviates from normality. To create the Q-Q plot of the residuals, run the following&amp;nbsp;code,&lt;/p&gt;
+&lt;pre class="r"&gt;&lt;code&gt;ggplot(data = systol_urban_frac_df) +
+  geom_qq(mapping = aes(sample = resid)) +
+  geom_qq_line(mapping = aes(sample = resid))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Generally, if we have a nearly normal distribution then most of the residuals will stay close to the reference line on the Q-Q plot. Regions where the residual distribution deviates from the normal distribution’s bell curve shape will show up as points that diverge from the reference line. Based on what you see in the visualization, conclude whether or not the residuals are nearly&amp;nbsp;normal.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Create and fit a second linear model for &lt;span class="monospace"&gt;Systol&lt;/span&gt; using the &lt;span class="monospace"&gt;Weight&lt;/span&gt; variable and name it &lt;span class="monospace"&gt;systol_weight_model&lt;/span&gt;. Does this new model seem to predict &lt;span class="monospace"&gt;Systol&lt;/span&gt; better than &lt;span class="monospace"&gt;urban_frac_life&lt;/span&gt;? Determine this by comparing the &lt;span class="math inline"&gt;\(R^{2}\)&lt;/span&gt; values (obtained using &lt;code&gt;glance()&lt;/code&gt;) for the two models. Then, create an &lt;em&gt;observed versus predicted&lt;/em&gt; plot, a &lt;em&gt;residual versus predicted&lt;/em&gt; plot, and a Q-Q residual plot for this new model. Should we conclude that this new model is reliable? Why or why&amp;nbsp;not?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Now let’s see what happens when we build a multivariate model. Build a model for &lt;span class="monospace"&gt;Systol&lt;/span&gt; that uses &lt;span class="monospace"&gt;urban_frac_life&lt;/span&gt; and &lt;span class="monospace"&gt;Weight&lt;/span&gt; at the same&amp;nbsp;time,&lt;/p&gt;
+&lt;pre class="r"&gt;&lt;code&gt;systol_combo_model &amp;lt;- lm(Systol ~ urban_frac_life + Weight, data = blood_pressure_updated)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Create a &lt;em&gt;residual versus predicted&lt;/em&gt; plot and a Q-Q residual plot for this model. Should we conclude that this new model is reliable? Also inspect the &lt;span class="math inline"&gt;\(R^{2}\)&lt;/span&gt; value for this new model. Does this seem to perform better than the single-variable&amp;nbsp;models?&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="how-to-submit"&gt;How to&amp;nbsp;submit&lt;/h2&gt;
+&lt;p&gt;To submit your mini-homework, follow the two steps below. Your homework will be graded for credit &lt;strong&gt;after&lt;/strong&gt; you’ve completed both&amp;nbsp;steps!&lt;/p&gt;
+&lt;ol type="1"&gt;
+&lt;li&gt;&lt;p&gt;Save, commit, and push your completed R Markdown file so that everything is synchronized to GitHub. If you do this right, then you will be able to view your completed file on the GitHub&amp;nbsp;website.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Knit your R Markdown document to the &lt;span class="caps"&gt;PDF&lt;/span&gt; format, export (download) the &lt;span class="caps"&gt;PDF&lt;/span&gt; file from RStudio Server, and then upload it to &lt;em&gt;Mini-homework 8&lt;/em&gt; posting on&amp;nbsp;Blackboard.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="cheatsheets"&gt;Cheatsheets&lt;/h2&gt;
+&lt;p&gt;You are encouraged to review and keep the following cheatsheets handy while working on this&amp;nbsp;mini-homework:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="/doc/data-transformation-cheatsheet.pdf"&gt;dplyr&amp;nbsp;cheatsheet&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="/doc/data-visualization-cheatsheet.pdf"&gt;ggplot2&amp;nbsp;cheatsheet&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="/doc/rstudio-ide-cheatsheet.pdf"&gt;RStudio&amp;nbsp;cheatsheet&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="/doc/rmarkdown-cheatsheet.pdf"&gt;R Markdown&amp;nbsp;cheatsheet&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="/doc/rmarkdown-reference.pdf"&gt;R Markdown&amp;nbsp;reference&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;section class="footnotes"&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id="fn1"&gt;&lt;p&gt;Peruvian blood pressure dataset and description sources: &lt;a href="https://newonlinecourses.science.psu.edu/stat501/node/299/" class="uri"&gt;https://newonlinecourses.science.psu.edu/stat501/node/299/&lt;/a&gt;, &lt;a href="https://www2.stat.duke.edu/courses/Fall98/sta113/proj/datasets.html" class="uri"&gt;https://www2.stat.duke.edu/courses/Fall98/sta113/proj/datasets.html&lt;/a&gt;.&lt;a href="#fnref1" class="footnote-back"&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content><category term="mini-assignment"></category></entry><entry><title>Homework 3</title><link href="http://sp19-001.cds101.com/assignments/homework-3/" rel="alternate"></link><published>2019-04-19T23:59:00-04:00</published><updated>2019-04-19T23:59:00-04:00</updated><author><name>Dr. Glasbrenner</name></author><id>tag:sp19-001.cds101.com,2019-04-19:/assignments/homework-3/</id><summary type="html">For your third major homework assignment, you will use statistical inference to answer a question about the National Survey of Family Growth, Cycle 6 dataset published by the National Center for Health&amp;nbsp;Statistics.</summary><content type="html">&lt;p&gt;&lt;span class="h3"&gt;&lt;strong&gt;Due:&lt;/strong&gt; April 19, 2019 @&amp;nbsp;11:59pm&lt;/span&gt;&lt;/p&gt;
 &lt;div class="no-bullets"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://classroom.github.com/g/xWXtHt8c"&gt;&lt;i class="fab fa-github-alt" data-fa-transform="grow-8"&gt;&lt;/i&gt;  Github Classroom repo for &lt;strong&gt;Homework&amp;nbsp;3&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
@@ -198,7 +351,65 @@
 &lt;li&gt;&lt;p&gt;&lt;a href="/doc/rmarkdown-cheatsheet.pdf"&gt;RMarkdown&amp;nbsp;cheatsheet&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href="/doc/rmarkdown-reference.pdf"&gt;RMarkdown&amp;nbsp;reference&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content><category term="homework"></category></entry><entry><title>Who busts the Mythbusters?</title><link href="http://sp19-001.cds101.com/assignments/minihw07-who-busts-the-mythbusters/" rel="alternate"></link><published>2019-04-10T23:59:00-04:00</published><updated>2019-04-10T23:59:00-04:00</updated><author><name>Dr. Glasbrenner</name></author><id>tag:sp19-001.cds101.com,2019-04-10:/assignments/minihw07-who-busts-the-mythbusters/</id><summary type="html">A mini-homework for practicing how to conduct hypothesis tests and calculate confidence intervals using the infer&amp;nbsp;package.</summary><content type="html">&lt;p&gt;&lt;span class="h3"&gt;&lt;strong&gt;Due:&lt;/strong&gt; April 10, 2019 @&amp;nbsp;11:59pm&lt;/span&gt;&lt;/p&gt;
+</content><category term="homework"></category></entry><entry><title>Reading 8</title><link href="http://sp19-001.cds101.com/assignments/reading08/" rel="alternate"></link><published>2019-04-15T11:59:00-04:00</published><updated>2019-04-15T11:59:00-04:00</updated><author><name>Dr. Glasbrenner</name></author><id>tag:sp19-001.cds101.com,2019-04-15:/assignments/reading08/</id><summary type="html">&lt;p&gt;&lt;i class="fa fa-book" data-fa-transform="grow-4"&gt;&lt;/i&gt;  &lt;span class="h3"&gt;R for Data&amp;nbsp;Science&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;i class="fa fa-link"&gt;&lt;/i&gt;  Book &lt;span class="caps"&gt;URL&lt;/span&gt;: &lt;a href="http://r4ds.had.co.nz" class="uri"&gt;http://r4ds.had.co.nz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Chapter 23: Model&amp;nbsp;basics&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Full chapter: &lt;a href="https://r4ds.had.co.nz/model-basics.html" class="uri"&gt;https://r4ds.had.co.nz/model-basics.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;i class="fa fa-book" data-fa-transform="grow-4"&gt;&lt;/i&gt;  &lt;span class="h3"&gt;Introductory Statistics with Randomization and&amp;nbsp;Simulation&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;i class="fa fa-link"&gt;&lt;/i&gt;  &lt;a href="/doc/Diez_Barr_%C3%87etinkaya-Rundel_IntroductoryStatisticsWithRandomizationAndSimulation.pdf"&gt;Click here&lt;/a&gt; to download the&amp;nbsp;textbook.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Chapter 5: Introduction to linear&amp;nbsp;regression&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Introduction&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Section&amp;nbsp;5.1&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Section 5.4, read …&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;&lt;i class="fa fa-book" data-fa-transform="grow-4"&gt;&lt;/i&gt;  &lt;span class="h3"&gt;R for Data&amp;nbsp;Science&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;i class="fa fa-link"&gt;&lt;/i&gt;  Book &lt;span class="caps"&gt;URL&lt;/span&gt;: &lt;a href="http://r4ds.had.co.nz" class="uri"&gt;http://r4ds.had.co.nz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Chapter 23: Model&amp;nbsp;basics&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Full chapter: &lt;a href="https://r4ds.had.co.nz/model-basics.html" class="uri"&gt;https://r4ds.had.co.nz/model-basics.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;i class="fa fa-book" data-fa-transform="grow-4"&gt;&lt;/i&gt;  &lt;span class="h3"&gt;Introductory Statistics with Randomization and&amp;nbsp;Simulation&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;i class="fa fa-link"&gt;&lt;/i&gt;  &lt;a href="/doc/Diez_Barr_%C3%87etinkaya-Rundel_IntroductoryStatisticsWithRandomizationAndSimulation.pdf"&gt;Click here&lt;/a&gt; to download the&amp;nbsp;textbook.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Chapter 5: Introduction to linear&amp;nbsp;regression&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Introduction&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Section&amp;nbsp;5.1&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Section 5.4, read subsection 5.4.1&amp;nbsp;only&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content><category term="reading"></category></entry><entry><title>Module 8 – Modeling</title><link href="http://sp19-001.cds101.com/materials/module08-materials/" rel="alternate"></link><published>2019-04-15T08:00:00-04:00</published><updated>2019-04-15T08:00:00-04:00</updated><author><name>Dr. Glasbrenner</name></author><id>tag:sp19-001.cds101.com,2019-04-15:/materials/module08-materials/</id><summary type="html">&lt;p&gt;&lt;span class="h2"&gt;Readings&lt;/span&gt;&lt;/p&gt;
+&lt;div class="no-bullets"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/assignments/reading08/"&gt;&lt;i class="fa fa-book" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Reading 8&lt;/span&gt;&lt;/a&gt; (Complete by: Apr-22 @&amp;nbsp;11:59pm)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div style="margin-bottom: 1em"&gt;
+
+&lt;/div&gt;
+&lt;p&gt;&lt;span class="h2"&gt;Homeworks&lt;/span&gt;&lt;/p&gt;
+&lt;div class="no-bullets"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="/assignments/minihw08-under-blood-pressure/"&gt;&lt;i class="fa fa-pen-square" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Mini-homework 8 – Under (blood) pressure&lt;/span&gt;&lt;/a&gt; (Due: Apr-24 @&amp;nbsp;11:59pm)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="fas fa-pencil-alt" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Homework 4 – Modeling &lt;span class="caps"&gt;NYC&lt;/span&gt; condominium prices&lt;/span&gt; (Due: May-3 @&amp;nbsp;11:59pm)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><content type="html">&lt;p&gt;&lt;span class="h2"&gt;Readings&lt;/span&gt;&lt;/p&gt;
+&lt;div class="no-bullets"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/assignments/reading08/"&gt;&lt;i class="fa fa-book" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Reading 8&lt;/span&gt;&lt;/a&gt; (Complete by: Apr-22 @&amp;nbsp;11:59pm)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div style="margin-bottom: 1em"&gt;
+
+&lt;/div&gt;
+&lt;p&gt;&lt;span class="h2"&gt;Homeworks&lt;/span&gt;&lt;/p&gt;
+&lt;div class="no-bullets"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="/assignments/minihw08-under-blood-pressure/"&gt;&lt;i class="fa fa-pen-square" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Mini-homework 8 – Under (blood) pressure&lt;/span&gt;&lt;/a&gt; (Due: Apr-24 @&amp;nbsp;11:59pm)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="fas fa-pencil-alt" data-fa-transform="grow-16"&gt;&lt;/i&gt;    &lt;span class="card-downloads-format"&gt;Homework 4 – Modeling &lt;span class="caps"&gt;NYC&lt;/span&gt; condominium prices&lt;/span&gt; (Due: May-3 @&amp;nbsp;11:59pm)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</content><category term="class notes"></category></entry><entry><title>Who busts the Mythbusters?</title><link href="http://sp19-001.cds101.com/assignments/minihw07-who-busts-the-mythbusters/" rel="alternate"></link><published>2019-04-10T23:59:00-04:00</published><updated>2019-04-10T23:59:00-04:00</updated><author><name>Dr. Glasbrenner</name></author><id>tag:sp19-001.cds101.com,2019-04-10:/assignments/minihw07-who-busts-the-mythbusters/</id><summary type="html">A mini-homework for practicing how to conduct hypothesis tests and calculate confidence intervals using the infer&amp;nbsp;package.</summary><content type="html">&lt;p&gt;&lt;span class="h3"&gt;&lt;strong&gt;Due:&lt;/strong&gt; April 10, 2019 @&amp;nbsp;11:59pm&lt;/span&gt;&lt;/p&gt;
 &lt;div class="no-bullets"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://classroom.github.com/a/voiFvS3p"&gt;&lt;i class="fab fa-github-alt" data-fa-transform="grow-8"&gt;&lt;/i&gt;  GitHub Classroom repo for &lt;strong&gt;Mini-homework 7 – Who busts the&amp;nbsp;Mythbusters?&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
@@ -2641,7 +2852,7 @@ ggplot(data=iris) +
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-</content></entry><entry><title>Spring 2019 Schedule</title><link href="http://sp19-001.cds101.com//index.html" rel="alternate"></link><published>2019-01-22T13:30:00-05:00</published><updated>2019-04-04T08:00:00-04:00</updated><author><name>Dr. Glasbrenner</name></author><id>tag:sp19-001.cds101.com,2019-01-22://index.html</id><summary type="html">&lt;table&gt;
+</content></entry><entry><title>Spring 2019 Schedule</title><link href="http://sp19-001.cds101.com//index.html" rel="alternate"></link><published>2019-01-22T13:30:00-05:00</published><updated>2019-04-15T08:00:00-04:00</updated><author><name>Dr. Glasbrenner</name></author><id>tag:sp19-001.cds101.com,2019-01-22://index.html</id><summary type="html">&lt;table&gt;
 &lt;colgroup&gt;
 &lt;col style="width: 9%" /&gt;
 &lt;col style="width: 11%" /&gt;
@@ -2768,14 +2979,16 @@ data-fa-transform="grow-8"&gt; &lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href="/materials/module07-materials/"&gt;&lt;i
 class="fas fa-chalkboard-teacher"
 data-fa-transform="grow-8"&gt; &lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td style="text-align: left;"&gt;&lt;a href="/assignments/reading07/"&gt;Reading 7&lt;/a&gt; (Complete by: Apr-8)&lt;br&gt; &lt;a href="/assignments/minihw07-who-busts-the-mythbusters/"&gt;Mini-homework 7&lt;/a&gt; (Due: Apr-10 @ 11:59pm) &lt;a href="/assignments/homework-3/"&gt;Homework 3&lt;/a&gt; (Due: Apr-19 @ 11:59pm)&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;&lt;a href="/assignments/reading07/"&gt;Reading 7&lt;/a&gt; (Complete by: Apr-8)&lt;br&gt; &lt;a href="/assignments/minihw07-who-busts-the-mythbusters/"&gt;Mini-homework 7&lt;/a&gt; (Due: Apr-10 @ 11:59pm)&lt;br&gt; &lt;a href="/assignments/homework-3/"&gt;Homework 3&lt;/a&gt; (Due: Apr-19 @ 11:59pm)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class="even"&gt;
 &lt;td style="text-align: left;"&gt;Module 8&lt;/td&gt;
 &lt;td style="text-align: left;"&gt;Apr-16&lt;br&gt; Apr-18&lt;br&gt; Apr-23&lt;br&gt; Apr-25&lt;/td&gt;
 &lt;td style="text-align: left;"&gt;Modeling&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td style="text-align: left;"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="/materials/module08-materials/"&gt;&lt;i
+class="fas fa-chalkboard-teacher"
+data-fa-transform="grow-8"&gt; &lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;&lt;a href="/assignments/reading08/"&gt;Reading 8&lt;/a&gt; (Complete by: Apr-22)&lt;br&gt; &lt;a href="/assignments/minihw08-under-blood-pressure/"&gt;Mini-homework 8&lt;/a&gt; (Due: Apr-24 @ 11:59pm) Homework 4 (Due: May-03 @ 11:59pm)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class="odd"&gt;
 &lt;td style="text-align: left;"&gt;&lt;/td&gt;
